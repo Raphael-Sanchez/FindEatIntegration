@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Find Eat</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="restorer-research.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <img src="assets/icons/logo-find-eat.png" alt="logo find eat" id="logo-find-eat">
+        <div id="block-btn">
+            <a href="#"><input type="button" class="btn-navbar" id="btn-registration" value="Inscription"></a>
+            <a href="#"><input type="button" class="btn-navbar" id="btn-login" value="Connexion"></a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div id="video-wallpaper">
+            <p id="title-wallpaper">BIENVENUE <br>CHEZ FIND EAT</p>
+            <p id="text-wallpaper">Plateforme de mise en relation <br>entre restaurateurs et grossiste</p>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="block-number-page">
+            <span id="nbr-result">42</span>&nbsp;résultats trouvés
+            <div>
+                <a href="#" class="link-nbr"><span class="number">1</span></a> -
+                <a href="#" class="link-nbr"><span class="number">2</span></a> -
+                <a href="#" class="link-nbr"><span class="number">3</span></a> -
+                <a href="#" class="link-nbr"><span class="number">4</span></a> -
+                <a href="#" class="link-nbr"><span class="number">5</span></a> -
+                <a href="#" class="link-nbr"><span class="number">6</span></a>
+            </div>
+            <div id="block-research">
+                <input type="text" id="research" placeholder="Rechercher un restaurant par son nom">
+                <a id="showFilters"><input type="button" id="btn-filters" value="Filtres"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="block-filters">
+            <div id="arrow-top"></div>
+            <ul class="ul-filters">
+                <li>
+                    <div class="title-filters">Type de produits</div>
+                    <div class="block-filters first">
+                        <a href="#"><div class="front-of-checkbox-small"><input type="checkbox" class="input-check-filters" id="fruits"></div></a>
+                        <div class="text-input-filters">Fruits</div>
+                    </div>
+                    <div class="block-filters">
+                        <a href="#"><div class="front-of-checkbox-small"><input type="checkbox" class="input-check-filters" id="vegetables"></div></a>
+                        <div class="text-input-filters">Légumes</div>
+                    </div>
+                    <div class="block-filters">
+                        <a href="#"><div class="front-of-checkbox-small"><input type="checkbox" class="input-check-filters" id="drinks"></div></a>
+                        <div class="text-input-filters">Boissons</div>
+                    </div>
+                    <div class="block-filters">
+                        <a href="#"><div class="front-of-checkbox-small"><input type="checkbox" class="input-check-filters" id="sausage"></div></a>
+                        <div class="text-input-filters">Sauces</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="title-filters">Type de restaurant</div>
+                    <div class="block-filters first">
+                        <a href="#"><div class="front-of-checkbox-small"><input type="checkbox" class="input-check-filters" id="bio"></div></a>
+                        <div class="text-input-filters">Bio</div>
+                    </div>
+                    <div class="block-filters">
+                        <a href="#"><div class="front-of-checkbox-small"><input type="checkbox" class="input-check-filters" id="fair"></div></a>
+                        <div class="text-input-filters">Équitable</div>
+                    </div>
+                    <div class="block-filters">
+                        <a href="#"><div class="front-of-checkbox-small"><a href="#"><input type="checkbox" class="input-check-filters" id="red-label"></a></div></a>
+                        <div class="text-input-filters">Label Rouge</div>
+                    </div>
+                    <div class="block-filters">
+                        <a href="#"><div class="front-of-checkbox-small"><input type="checkbox" class="input-check-filters" id="controlled-origin"></div></a>
+                        <div class="text-input-filters">Appellation d'origine contrôlée</div>
+                    </div>
+                </li>
+                <li class="li-last">
+                    <div class="title-filters">Localisation</div>
+                    <div>
+                        <a href="#"><div class="front-of-checkbox check-2km">> 2km<input type="checkbox" class="checkbox-hide" id="2km"></div></a>
+                        <a href="#"><div class="front-of-checkbox check-5km">5km<input type="checkbox" class="checkbox-hide" id="5km"></div></a>
+                    </div>
+                    <div>
+                        <a href="#"><div class="front-of-checkbox check-8km">8km<input type="checkbox" class="checkbox-hide" id="8km"></div></a>
+                        <a href="#"><div class="front-of-checkbox check-10km">10km<input type="checkbox" class="checkbox-hide" id="10km"></div></a>
+                    </div>
+                    <a href="#"><div class="front-of-checkbox check-doesnt-matter">Peu importe<input type="checkbox" class="checkbox-hide" id="doesnt-matter"></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="block-result">
+            <div class="col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
+                <div class="img-restaurant" style="background-image: url('assets/images/restau-test.png');">
+                    <a href="#"><div class="see-restaurant">Voir ce restaurant</div></a>
+                </div>
+            </div>
+            <div class="col-sm-offset-1 col-sm-5 col-md-5 col-lg-5">
+                <div class="block-text-restau">
+                    <div class="title-restaurant">Claire's Marais</div>
+                    <div class="block-location">
+                        <img src="assets/icons/location.png" alt="icon location" class="icon-location">
+                        <span class="adress-location">Paris 75011</span>
+                    </div>
+                    <div class="block-location">
+                        <a href="">
+                            <img src="assets/icons/comment.png" alt="icon comment" class="icon-location">
+                            <span class="adress-location">Voir les commentaires</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="col-sm-12">
+                <img src="assets/images/findeat-footer.png" alt="logo findeat" id="findeat-logo-footer">
+                <a href="#"><img src="assets/icons/instagram.png" alt="logo instagram" class="logo-footer"></a>
+                <a href="#"><img src="assets/icons/facebook.png" alt="logo facebook" class="logo-footer right-10"></a>
+                <a href="#"><img src="assets/icons/twitter.png" alt="logo twitter" class="logo-footer right-10"></a>
+                <div id="hr-footer"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-lg-offset-1 col-lg-10">
+                <div class="col-xs-6 col-sm-offset-1 col-sm-3 col-md-offset-1 col-md-3 col-lg-offset-0 col-lg-4">
+                    <ul class="footer-ul">
+                        <li class="title-footer-li">INFORMATION</li>
+                        <li><a href="#" class="link-footer">A PROPOS</a></li>
+                        <li><a href="#" class="link-footer">NOS SERVICES</a></li>
+                        <li><a href="#" class="link-footer">MON COMPTE</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-3 col-lg-4">
+                    <ul class="footer-ul">
+                        <li class="title-footer-li">SERVICE CLIENT</li>
+                        <li><a href="#" class="link-footer">FAQ</a></li>
+                        <li><a href="#" class="link-footer">NOUS CONTACTER</a></li>
+                        <li><a href="#" class="link-footer">CGU/CGV</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                    <ul class="footer-ul">
+                        <li class="title-footer-li">S&apos;INSCRIRE À LA NEWSLETTER</li>
+                        <li>
+                            <input type="email" placeholder="ADRESSE MAIL" id="email-newsletter">
+                            <a href="#"><span id="icon-email-news"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<!-- SCRIPTS -->
+<script src="bootstrap-3.3.7/js/jquery-3.1.1.min.js"></script>
+<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script>
+    jQuery(function ($)
+    {
+        $('#showFilters').click(function ()
+        {
+            console.log('filtres');
+            $('#block-filters').toggle();
+        });
+
+        $('.front-of-checkbox').on('click', function (e)
+        {
+            e.preventDefault();
+            $('.front-of-checkbox').removeClass('check-filters-clicked');
+            $('.front-of-checkbox').find('input.checkbox-hide').prop('checked', false);
+            $(this).addClass('check-filters-clicked');
+
+            var inputIdCheckbox = $(this).find('input').attr('id');
+            $('input#' + inputIdCheckbox).prop('checked', true);
+        });
+
+        $('.front-of-checkbox-small').on('click', function (e)
+        {
+            e.preventDefault();
+            var inputIdCheckbox = $(this).find('.input-check-filters').attr('id');
+
+            if ($('#'+ inputIdCheckbox).is(':checked'))
+            {
+                $('#'+ inputIdCheckbox).prop('checked', false);
+                $(this).removeClass('checked-filters');
+            }
+            else
+            {
+                $('#'+ inputIdCheckbox).prop('checked', true);
+                $(this).addClass('checked-filters');
+            }
+        });
+
+
+    });
+</script>
+</html>

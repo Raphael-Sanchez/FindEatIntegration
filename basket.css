@@ -1,0 +1,1170 @@
+@font-face
+{
+    font-family: "Gotham-Book";
+    src: url('assets/fonts/gotham/Gotham-Book.otf');
+}
+
+@font-face
+{
+    font-family: "Gotham-Bold";
+    src: url('assets/fonts/gotham/Gotham-Bold.ttf');
+}
+
+@font-face
+{
+    font-family: "Gotham-Medium-Regular";
+    src: url('assets/fonts/gotham/Gotham-Medium-Regular.ttf');
+}
+
+body
+{
+    /* PADDING FOR BOOTSTRAP NAVBAR */
+    padding-top: 70px;
+    min-width: 320px!important;
+}
+
+a
+{
+    text-decoration: none!important;
+    outline: none!important;
+    color: black!important;
+}
+
+.no-padding
+{
+    padding: 0 !important;
+    margin: auto !important;
+}
+
+/* -------------------------------- BASE HOME -------------------------------- */
+
+
+/* -------------------- NAVBAR  -------------------- */
+nav
+{
+    background-color: #ffffff!important;
+    height: 80px!important;
+    border: 0px!important;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img#logo-find-eat
+{
+    margin-top: 5px;
+    height: 70px;
+}
+
+/* --- NAVBAR BUTTON STYLE --- */
+#block-btn
+{
+    position: absolute;
+    display: inline-block;
+    right: 20px;
+}
+
+.btn-basket
+{
+    display: block;
+    margin-top: -5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #f15c22;
+}
+
+.btn-basket>img
+{
+    width: 17px;
+    margin-top: 9px;
+}
+
+/* --- NAVBAR BUTTON LINKS --- */
+a>input.btn-navbar
+{
+    text-decoration: none;
+}
+
+a>input.btn-navbar:focus
+{
+    outline: none;
+}
+
+a>input.btn-navbar:hover
+{
+    background-color: #f15c22;
+    color: #ffffff!important;
+}
+
+/* --- FOOTER --- */
+footer
+{
+    width: 100%;
+    height: 370px;
+    margin-top: 150px;
+    background-color: #f3f4f5;
+    position: relative;
+    bottom: 0;
+    padding-top: 60px;
+}
+
+img#findeat-logo-footer
+{
+    width: 100px;
+    margin-left: 50px;
+}
+
+.logo-footer
+{
+    width: 25px;
+    float: right;
+    margin-top: 25px;
+}
+
+.right-10
+{
+    margin-right: 15px;
+}
+
+#hr-footer
+{
+    background-color: #d9d7d1;
+    height: 1px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.footer-ul
+{
+    list-style: none;
+    font-family: 'Gotham-Bold';
+}
+
+.title-footer-li
+{
+    padding-top: 40px!important;
+    color: #b3aa9c;
+    font-size: 16px!important;
+    padding-bottom: 10px;
+    box-sizing: content-box;
+}
+
+.footer-ul>li
+{
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+input#email-newsletter
+{
+    width: 230px;
+    height: 32px;
+    border: none;
+    padding-left: 15px;
+    padding-right: 50px;
+}
+
+input#email-newsletter:focus
+{
+    outline: none;
+}
+
+#email-newsletter::-webkit-input-placeholder
+{ /* WebKit, Blink, Edge */
+    color: #000000;
+}
+#email-newsletter:-moz-placeholder
+{ /* Mozilla Firefox 4 to 18 */
+    color: #000000;
+}
+#email-newsletter::-moz-placeholder
+{ /* Mozilla Firefox 19+ */
+    color: #000000;
+}
+#email-newsletter:-ms-input-placeholder
+{ /* Internet Explorer 10-11 */
+    color: #000000;
+}
+
+#icon-email-news
+{
+    height: 25px;
+    width: 30px;
+    background-image: url("assets/icons/mail-newsletter.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    right: 40px;
+}
+/* -------------------------------- END BASE HOME -------------------------------- */
+
+
+
+
+/* -------------------------------- MEDIA QUERIES FORMAT (<768px,>=768px 992px, 1200px) -------------------------------- */
+@media(min-width: 320px)
+{
+    /* --- NAVBAR BUTTON STYLE --- */
+    #block-btn
+    {
+        display: none;
+    }
+
+    /* --- FOOTER --- */
+    footer
+    {
+        width: 100%;
+        height: 390px;
+        margin-top: 100px;
+        background-color: #f3f4f5;
+        position: relative;
+        bottom: 0;
+        padding-top: 0px;
+    }
+
+    img#findeat-logo-footer
+    {
+        display: inline-block;
+        width: 70px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .logo-footer
+    {
+        width: 20px;
+        float: right;
+        margin-top: 37px;
+    }
+
+    .right-10
+    {
+        margin-right: 15px;
+    }
+
+    #hr-footer
+    {
+        background-color: #d9d7d1;
+        height: 1px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-ul
+    {
+        padding: 0px!important;
+    }
+
+    .title-footer-li
+    {
+        padding-top: 40px!important;
+        font-size: 13px!important;
+    }
+
+    .footer-ul>li
+    {
+        padding-top: 8px;
+        font-size: 11px;
+    }
+
+    input#email-newsletter
+    {
+        width: 170px;
+    }
+
+}
+
+@media(min-width: 480px)
+{
+
+
+
+    /* --- FOOTER --- */
+    footer
+    {
+        width: 100%;
+        height: 370px;
+        margin-top: 100px;
+        background-color: #f3f4f5;
+        position: relative;
+        bottom: 0;
+        padding-top: 0px;
+    }
+
+    img#findeat-logo-footer
+    {
+        display: inline-block;
+        width: 70px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .logo-footer
+    {
+        width: 20px;
+        float: right;
+        margin-top: 37px;
+    }
+
+    .right-10
+    {
+        margin-right: 15px;
+    }
+
+    #hr-footer
+    {
+        background-color: #d9d7d1;
+        height: 1px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-ul
+    {
+        padding: 0px!important;
+    }
+
+    .title-footer-li
+    {
+        padding-top: 40px!important;
+        font-size: 13px!important;
+    }
+
+    .footer-ul>li
+    {
+        padding-top: 8px;
+        font-size: 11px;
+    }
+
+    input#email-newsletter
+    {
+        width: 200px;
+    }
+}
+
+@media(min-width:768px)
+{
+    /* -------------------- NAVBAR  -------------------- */
+    nav
+    {
+        background-color: #ffffff!important;
+        height: 80px!important;
+        border: 0px!important;
+    }
+
+    img#logo-find-eat
+    {
+        margin-top: 5px;
+        height: 70px;
+    }
+
+    /* --- NAVBAR BUTTON STYLE --- */
+    #block-btn
+    {
+        display: none;
+    }
+
+    /* --- NAVBAR BUTTON LINKS --- */
+    a>input.btn-navbar
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-navbar:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-navbar:hover
+    {
+        background-color: #f15c22;
+        color: #ffffff!important;
+    }
+
+
+    /* --- FOOTER --- */
+    footer
+    {
+        width: 100%;
+        height: 300px;
+        margin-top: 150px;
+        background-color: #f3f4f5;
+        position: relative;
+        bottom: 0;
+        padding-top: 0px;
+    }
+
+    img#findeat-logo-footer
+    {
+        width: 100px;
+        margin-left: 50px;
+    }
+
+    .logo-footer
+    {
+        width: 25px;
+        float: right;
+        margin-top: 50px;
+    }
+
+    .right-10
+    {
+        margin-right: 15px;
+    }
+
+    #hr-footer
+    {
+        background-color: #d9d7d1;
+        height: 1px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .footer-ul
+    {
+        list-style: none;
+        font-family: 'Gotham-Bold';
+    }
+
+    .title-footer-li
+    {
+        padding-top: 40px!important;
+        color: #b3aa9c;
+        font-size: 16px!important;
+        padding-bottom: 10px;
+        box-sizing: content-box;
+    }
+
+    .footer-ul>li
+    {
+        padding-top: 12px;
+        font-size: 12px;
+    }
+
+    input#email-newsletter
+    {
+        width: 160px;
+        height: 32px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 50px;
+    }
+
+    #icon-email-news
+    {
+        height: 25px;
+        width: 30px;
+        background-image: url("assets/icons/mail-newsletter.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        right: 40px;
+    }
+}
+
+
+/* -------------- SMALL DESKTOP -------------- */
+@media(min-width:992px)
+{
+    /* -------------------- NAVBAR  -------------------- */
+    nav
+    {
+        background-color: #ffffff!important;
+        height: 80px!important;
+        border: 0px!important;
+    }
+
+    img#logo-find-eat
+    {
+        margin-top: 5px;
+        height: 70px;
+    }
+
+    /* --- NAVBAR BUTTON STYLE --- */
+    #block-btn
+    {
+        position: absolute;
+        display: inline-block;
+        margin-top: 28px;
+        right: 20px;
+    }
+
+    /* --- NAVBAR BUTTON LINKS --- */
+    a>input.btn-navbar
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-navbar:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-navbar:hover
+    {
+        background-color: #f15c22;
+        color: #ffffff!important;
+    }
+
+
+    /* --- FOOTER --- */
+    footer
+    {
+        width: 100%;
+        height: 350px;
+        margin-top: 150px;
+        background-color: #f3f4f5;
+        position: relative;
+        bottom: 0;
+        padding-top: 40px;
+    }
+
+    img#findeat-logo-footer
+    {
+        width: 100px;
+        margin-left: 50px;
+    }
+
+    .logo-footer
+    {
+        width: 25px;
+        float: right;
+        margin-top: 50px;
+    }
+
+    .right-10
+    {
+        margin-right: 15px;
+    }
+
+    #hr-footer
+    {
+        background-color: #d9d7d1;
+        height: 1px;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .footer-ul
+    {
+        list-style: none;
+    }
+
+    .title-footer-li
+    {
+        padding-top: 40px!important;
+        color: #b3aa9c;
+        font-size: 16px!important;
+        padding-bottom: 10px;
+        box-sizing: content-box;
+    }
+
+    .footer-ul>li
+    {
+        padding-top: 12px;
+        font-size: 12px;
+    }
+
+    input#email-newsletter
+    {
+        width: 180px;
+        height: 32px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 50px;
+    }
+
+    #icon-email-news
+    {
+        height: 25px;
+        width: 30px;
+        background-image: url("assets/icons/mail-newsletter.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        right: 40px;
+    }
+}
+
+
+
+
+/* -------------- FORMAT DESKTOP -------------- */
+@media(min-width:1200px)
+{
+    nav
+    {
+        background-color: #ffffff!important;
+        height: 80px!important;
+        border: 0px!important;
+        -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    img#logo-find-eat
+    {
+        margin-top: 5px;
+        height: 70px;
+    }
+
+    /* --- NAVBAR BUTTON STYLE --- */
+    #block-btn
+    {
+        position: absolute;
+        display: inline-block;
+        margin-top: 28px;
+        right: 20px;
+    }
+
+    .title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 22px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .tiret-left
+    {
+        width: 45%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: left;
+    }
+
+    /* SEPARATION LOSANGE */
+    .block-losange
+    {
+        margin-top: 60px;
+    }
+
+    .losange
+    {
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-bottom-color: #f15c22;
+        position: relative;
+        left: 40px;
+        top: -29px;
+        display: inline-block;
+    }
+
+    .losange:after
+    {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: 15px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: #f15c22;
+    }
+
+    .tiret-right
+    {
+        width: 45%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: right;
+    }
+
+    /* WALPAPER BASKET */
+    .wallpaper-basket
+    {
+        width: 80%;
+        height: 190px;
+        margin: auto;
+        background-color: #2aabd2;
+        background-image: url("assets/images/wallpaper-basket.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+    }
+
+    .delivery-block
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    /* BLOCK BASKET TOTAL */
+    .block-basket-details
+    {
+        width: 90%;
+        border: 1px solid #d0d4d9;
+        margin: auto;
+    }
+
+    .header-basket-details
+    {
+        margin: auto;
+        width: 70%;
+        height: 50px;
+        border-left: 1px solid #edecec;
+        border-top: 1px solid #edecec;
+        border-right: 1px solid #edecec;
+        border-bottom: 1px solid #edecec;
+        position: relative;
+        margin-top: -51px;
+        border-radius: 10px;
+        z-index: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+    }
+
+    .header-basket-details>ul
+    {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        list-style: none;
+        font-family: 'Gotham-Medium-Regular';
+        padding: 0;
+    }
+
+    .header-basket-details>li
+    {
+        font-size: 14px;
+    }
+
+    #bag-findeat
+    {
+        width: 35px;
+        margin-left: 40px;
+        margin-top: 25px;
+        display: inline-block;
+    }
+
+    #text-bag-findeat
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        margin-left: 15px;
+        display: inline-block;
+        position: relative;
+        top: 16px;
+    }
+
+    #cent-pourcent-secure>img
+    {
+        width: 14px;
+        margin-right: 25px;
+    }
+
+    #cent-pourcent-secure
+    {
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        background-color: #f15c22;
+        border-radius: 7px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        padding-top: 10px;
+        float: right;
+        margin-top: 35px;
+        margin-right: 40px;
+    }
+
+    /* BLOCK PRODUCTS BASKET */
+    #block-content-products
+    {
+        clear: both;
+        margin-top: 70px;
+        width: 70%;
+    }
+
+    #block-total-basket
+    {
+        box-sizing: border-box;
+        width: 308px;
+        position: absolute;
+        border-top: 5px solid #f3f4f5;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 20px;
+        text-align: center;
+        display: inline-block;
+        margin-left: 716px;
+        margin-top: -770px;
+    }
+
+    .small-title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+
+    .small-info-basket
+    {
+        font-family: 'Gotham-Bold';
+        color: #989797;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 14px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .small-info-basket>div
+    {
+        font-family: 'Gotham-Bold';
+        color: black;
+        font-size: 16px;
+        display: inline-block;
+        float: right;
+    }
+
+    .free-delivery-basket
+    {
+        font-family: 'Gotham-Book'!important;
+        font-size: 12px!important;
+        line-height: 20px;
+        color: #c0c3c5!important;
+    }
+
+    .grey-separator-basket
+    {
+        width: 100%;
+        height: 5px;
+        background-color: #f3f4f5;
+    }
+
+    .tva-small
+    {
+        color: black;
+        font-family: 'Gotham-Bold';
+    }
+
+    #proceed-command
+    {
+        margin-top: 35px;
+        font-family: 'Gotham-Medium-Regular';
+        text-transform: uppercase;
+        color: white;
+        width: 100%;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #f15c22;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    input#proceed-command:hover
+    {
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    input#proceed-command:focus
+    {
+        outline: none;
+    }
+
+    .product-grey
+    {
+        background-color: #f3f4f5;
+    }
+
+    .product-white
+    {
+        background-color: #ffffff;
+    }
+
+    .block-products-basket
+    {
+        height: 220px;
+        width: 100%;
+    }
+
+    .delete-product
+    {
+        display: inline;
+        font-family: 'Gotham-Medium-Regular';
+        font-size: 14px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .icon-delete-product
+    {
+        width: 12px;
+        margin-left: 8px;
+    }
+
+    .img-product-basket
+    {
+        width: 115px;
+        height: 100px;
+        border: 1px solid black;
+        position: relative;
+        top: 60px;
+        left: 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .block-product-quantity
+    {
+        width: 470px;
+        height: 100px;
+        position: relative;
+        top: -40px;
+        left: 200px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .product-quantity
+    {
+        font-family: 'Gotham-Medium-Regular';
+        color: black;
+        font-size: 13px;
+        display: inline-block;
+        float: left;
+        text-align: left;
+    }
+
+    .product-provider
+    {
+        color: #868686;
+    }
+
+    .price-product
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 25px;
+    }
+
+    .add-or-remove-product
+    {
+        width: 120px;
+        height: 50px;
+        border: 1px solid #b7b7b8;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.3) inset;
+        float: right;
+        margin-top: -10px;
+    }
+
+    .remove-product
+    {
+        width: 40px;
+        height: 48px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .quantity-add-or-remove
+    {
+        display: inline-block;
+        width: 38px;
+        margin-top: 15px;
+        font-family: 'Gotham-Medium-Regular';
+    }
+
+    .add-product
+    {
+        padding: 0px;
+        width: 40px;
+        height: 48px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: right;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .reassurance-products
+    {
+        width: 70%;
+        text-align: right;
+    }
+
+    .reassurance-products>img
+    {
+        width: 350px;
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
+
+
+
+
+
+    /* --- NAVBAR BUTTON LINKS --- */
+    a>input.btn-navbar
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-navbar:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-navbar:hover
+    {
+        background-color: #f15c22;
+        color: #ffffff!important;
+    }
+
+
+
+    /* --- FOOTER --- */
+    footer
+    {
+        width: 100%;
+        height: 370px;
+        margin-top: 150px;
+        background-color: #f3f4f5;
+        position: relative;
+        bottom: 0;
+        padding-top: 60px;
+    }
+
+    img#findeat-logo-footer
+    {
+        width: 100px;
+        margin-left: 50px;
+    }
+
+    .logo-footer
+    {
+        width: 25px;
+        float: right;
+        margin-top: 25px;
+    }
+
+    .right-10
+    {
+        margin-right: 15px;
+    }
+
+    #hr-footer
+    {
+        background-color: #d9d7d1;
+        height: 1px;
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .footer-ul
+    {
+        list-style: none;
+        font-family: 'Gotham-Bold';
+    }
+
+    .title-footer-li
+    {
+        padding-top: 40px!important;
+        color: #b3aa9c;
+        font-size: 16px!important;
+        padding-bottom: 10px;
+        box-sizing: content-box;
+    }
+
+    .footer-ul>li
+    {
+        padding-top: 12px;
+        font-size: 12px;
+    }
+
+    input#email-newsletter
+    {
+        width: 230px;
+        height: 32px;
+        border: none;
+        padding-left: 15px;
+        padding-right: 50px;
+    }
+
+    input#email-newsletter:focus
+    {
+        outline: none;
+    }
+
+    #email-newsletter::-webkit-input-placeholder
+    { /* WebKit, Blink, Edge */
+        color: #000000;
+    }
+    #email-newsletter:-moz-placeholder
+    { /* Mozilla Firefox 4 to 18 */
+        color: #000000;
+    }
+    #email-newsletter::-moz-placeholder
+    { /* Mozilla Firefox 19+ */
+        color: #000000;
+    }
+    #email-newsletter:-ms-input-placeholder
+    { /* Internet Explorer 10-11 */
+        color: #000000;
+    }
+
+    #icon-email-news
+    {
+        height: 25px;
+        width: 30px;
+        background-image: url("assets/icons/mail-newsletter.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        right: 40px;
+    }
+}

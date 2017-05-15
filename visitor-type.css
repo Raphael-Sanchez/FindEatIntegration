@@ -1,0 +1,671 @@
+@font-face
+{
+    font-family: "Gotham-Book";
+    src: url('assets/fonts/gotham/Gotham-Book.otf');
+}
+
+@font-face
+{
+    font-family: "Gotham-Bold";
+    src: url('assets/fonts/gotham/Gotham-Bold.ttf');
+}
+
+@font-face
+{
+    font-family: "A Little Sunshine";
+    src: url('assets/fonts/a-little-sunshine.ttf');
+}
+
+body
+{
+    min-height: 480px!important;
+}
+
+a
+{
+    text-decoration: none!important;
+    outline: none!important;
+}
+
+.no-padding
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* -------------------------------- BASE VISITOR TYPE -------------------------------- */
+#wallpaper-visitor-type
+{
+    height: 100vh;
+    width: 100%;
+    background-image: url("assets/images/wallpaper-visitor-type.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.ul-head
+{
+    display: flex;
+    align-items: stretch;;
+    width: 100%;
+    font-family: 'Gotham-Book';
+    margin-top: 15px;
+}
+
+.li-first
+{
+    margin-left: 0px;
+}
+
+.li-head
+{
+    display: inline-table;
+    margin-left: 30px;
+}
+
+.li-head>a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.li-head>a:focus
+{
+    outline: none;
+}
+
+.li-head>a:hover
+{
+    color: #ffffff!important;
+}
+
+.find-eat-logo
+{
+    margin-top: 20px;
+    height: 80px;
+}
+
+.block-text-visitor
+{
+    margin: auto;
+    margin-top: 100px;
+    width: 670px;
+    color: #ffffff;
+    font-family: 'Gotham-Book';
+    font-size: 20px;
+    text-align: center;
+}
+
+#text-editor
+{
+    clear: both;
+    display: block;
+}
+
+#title-visitor
+{
+    font-family: 'A Little Sunshine';
+    color: #ffffff;
+    font-size: 80px;
+    margin-top: 80px;
+}
+
+img#quote-open
+{
+    display: block;
+    float: left;
+    width: 30px;
+    padding-bottom: 10px;
+}
+
+img#quote-close
+{
+    display: block;
+    float: right;
+    width: 30px;
+    padding-top: 10px;
+}
+
+/* --------- BUTTON VISITOR --------- */
+.block-btn-visitor
+{
+    width: 600px;
+    margin: auto;
+    padding-bottom: 5vh;
+}
+
+.btn-visitor-type
+{
+    width: 200px;
+    height: 45px;
+    border-radius: 45px;
+    display: inline-block;
+    color: #ffffff;
+    font-family: 'Gotham-Book';
+    border: none;
+}
+
+#btn-provider
+{
+    background-color: #37bae0;
+    float: left;
+}
+
+#btn-restorer
+{
+    background-color: #f15c22;
+    float: right;
+}
+
+a>input.btn-visitor-type
+{
+    text-decoration: none;
+}
+
+a>input.btn-visitor-type:focus
+{
+    outline: none;
+}
+
+a>input.btn-visitor-type:hover
+{
+    color: #ffffff!important;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+}
+
+#icon-return-tablet
+{
+    display: none;
+}
+
+/* -------------------------------- END VISITOR TYPE -------------------------------- */
+
+
+/*!* -------------------------------- LANDSCAPE FORMAT -------------------------------- *!*/
+/*@media(min-width:320px) and (max-width: 767px) and (orientation : landscape)*/
+/*{*/
+    /*body*/
+    /*{*/
+        /*height: 100vh;*/
+        /*width: 100%;*/
+        /*background-image: url("assets/images/wallpaper-visitor-type.jpg");*/
+        /*background-position: center;*/
+        /*background-size: cover;*/
+        /*background-repeat: no-repeat;*/
+        /*text-align: center;*/
+    /*}*/
+
+    /*#content*/
+    /*{*/
+        /*display: none;*/
+    /*}*/
+
+    /*#block-landscape*/
+    /*{*/
+        /*font-family: 'Gotham-Book';*/
+        /*font-size: 1em;*/
+        /*text-align: center;*/
+        /*color: #ffffff;*/
+        /*line-height: 20px;*/
+    /*}*/
+
+    /*#icon-return-tablet*/
+    /*{*/
+        /*display: block;*/
+        /*margin: auto;*/
+        /*margin-top: 21vh;*/
+        /*width: 30px!important;*/
+        /*padding-bottom: 20px;*/
+    /*}*/
+/*}*/
+
+
+/* -------------------------------- MEDIA QUERIES FORMAT (320px, 768px, 992px, 1200px) -------------------------------- */
+
+/*!* ------------------------------ SMALL SIZE SMARTPHONE ------------------------------ *!*/
+@media(min-width:320px)
+{
+    #wallpaper-visitor-type
+    {
+        height: 100vh;
+        width: 100%;
+        background-image: url("assets/images/wallpaper-visitor-type.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .ul-head
+    {
+        margin-top: 15px;
+    }
+
+    .li-first
+    {
+        margin-left: -40px!important;
+    }
+
+    .li-head
+    {
+        margin-left: 15px;
+        font-size: 0.7em;
+    }
+
+    .find-eat-logo
+    {
+        margin-top: 20px;
+        height: 4em;
+    }
+
+    .block-text-visitor
+    {
+        margin-top: 10vh;
+        width: 300px;
+        font-size: 0.9em;
+    }
+
+    #title-visitor
+    {
+        font-size: 3em;
+        margin-top: 10vh;
+    }
+
+    img#quote-open
+    {
+        width: 17px;
+        padding-bottom: 10px;
+    }
+
+    img#quote-close
+    {
+        width: 17px;
+        padding-top: 10px;
+    }
+
+    /* --------- BUTTON VISITOR --------- */
+    .block-btn-visitor
+    {
+        width: 280px;
+        margin: auto;
+        padding-bottom: 5vh;
+    }
+
+    .btn-visitor-type
+    {
+        width: 100px;
+        height: 30px;
+        border-radius: 45px;
+        display: inline-block;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        border: none;
+        font-size: 11px;
+    }
+
+    #btn-provider
+    {
+        background-color: #37bae0;
+        float: left;
+    }
+
+    #btn-restorer
+    {
+        background-color: #f15c22;
+        float: right;
+    }
+
+    a>input.btn-visitor-type
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-visitor-type:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-visitor-type:hover
+    {
+        color: #ffffff!important;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    }
+}
+
+
+/*!* ------------------------------ SMALL SIZE (TABLET) ------------------------------ *!*/
+@media(min-width:768px)
+{
+    #wallpaper-visitor-type
+    {
+        height: 100vh;
+        width: 100%;
+        background-image: url("assets/images/wallpaper-visitor-type.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .ul-head
+    {
+        margin-top: 15px;
+    }
+
+    .li-first
+    {
+        margin-left: 0px!important;
+    }
+
+    .li-head
+    {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+
+    .find-eat-logo
+    {
+        margin-top: 30px;
+        height: 10vw;
+    }
+
+    .block-text-visitor
+    {
+        margin-top: 10vh;
+        width: 700px;
+        font-size: 1.5em;
+    }
+
+    #title-visitor
+    {
+        font-size: 3.4em;
+        margin-top: 10vh;
+    }
+
+    img#quote-open
+    {
+        width: 25px;
+        padding-bottom: 10px;
+    }
+
+    img#quote-close
+    {
+        width: 25px;
+        padding-top: 10px;
+    }
+
+    /* --------- BUTTON VISITOR --------- */
+    .block-btn-visitor
+    {
+        width: 550px;
+        margin: auto;
+        padding-bottom: 5vh;
+    }
+
+    .btn-visitor-type
+    {
+        width: 190px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #btn-provider
+    {
+        background-color: #37bae0;
+        float: left;
+    }
+
+    #btn-restorer
+    {
+        background-color: #f15c22;
+        float: right;
+    }
+
+    a>input.btn-visitor-type
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-visitor-type:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-visitor-type:hover
+    {
+        color: #ffffff!important;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    }
+}
+
+
+
+
+
+/*!* ------------------------------ MEDIUM SIZE (DESKTOP) ------------------------------ *!*/
+@media(min-width:992px)
+{
+    #wallpaper-visitor-type
+    {
+        height: 100vh;
+        width: 100%;
+        background-image: url("assets/images/wallpaper-visitor-type.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .ul-head
+    {
+        margin-top: 15px;
+    }
+
+    .li-first
+    {
+        margin-left: 0px!important;
+    }
+
+    .li-head
+    {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+
+    .find-eat-logo
+    {
+        margin-top: 30px;
+        height: 8vw;
+    }
+
+    .block-text-visitor
+    {
+        margin-top: 10vh;
+        width: 700px;
+        font-size: 1.5em;
+    }
+
+    #title-visitor
+    {
+        font-size: 3.4em;
+        margin-top: 10vh;
+    }
+
+    img#quote-open
+    {
+        width: 25px;
+        padding-bottom: 10px;
+    }
+
+    img#quote-close
+    {
+        width: 25px;
+        padding-top: 10px;
+    }
+
+    /* --------- BUTTON VISITOR --------- */
+    .block-btn-visitor
+    {
+        width: 550px;
+        margin: auto;
+        padding-bottom: 5vh;
+    }
+
+    .btn-visitor-type
+    {
+        width: 190px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #btn-provider
+    {
+        background-color: #37bae0;
+        float: left;
+    }
+
+    #btn-restorer
+    {
+        background-color: #f15c22;
+        float: right;
+    }
+
+    a>input.btn-visitor-type
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-visitor-type:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-visitor-type:hover
+    {
+        color: #ffffff!important;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    }
+}
+
+
+
+
+
+
+
+/*!* ------------------------------ LARGE SIZE (LARGE DESKTOP) ------------------------------ *!*/
+@media(min-width:1200px)
+{
+    #wallpaper-visitor-type
+    {
+        height: 100vh;
+        width: 100%;
+        background-image: url("assets/images/wallpaper-visitor-type.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+    }
+
+    .ul-head
+    {
+        margin-top: 15px;
+    }
+
+    .li-first
+    {
+        margin-left: 0px!important;
+    }
+
+    .li-head
+    {
+        margin-left: 30px;
+        font-size: 12px;
+    }
+
+    .find-eat-logo
+    {
+        margin-top: 30px;
+        height: 8vw;
+    }
+
+    .block-text-visitor
+    {
+        margin-top: 10vh;
+        width: 700px;
+        font-size: 1.5em;
+    }
+
+    #title-visitor
+    {
+        font-size: 3.4em;
+        margin-top: 10vh;
+    }
+
+    img#quote-open
+    {
+        width: 25px;
+        padding-bottom: 10px;
+    }
+
+    img#quote-close
+    {
+        width: 25px;
+        padding-top: 10px;
+    }
+
+    /* --------- BUTTON VISITOR --------- */
+    .block-btn-visitor
+    {
+        width: 550px;
+        margin: auto;
+        padding-bottom: 5vh;
+    }
+
+    .btn-visitor-type
+    {
+        width: 190px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    #btn-provider
+    {
+        background-color: #37bae0;
+        float: left;
+    }
+
+    #btn-restorer
+    {
+        background-color: #f15c22;
+        float: right;
+    }
+
+    a>input.btn-visitor-type
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-visitor-type:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-visitor-type:hover
+    {
+        color: #ffffff!important;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.75);
+    }
+}

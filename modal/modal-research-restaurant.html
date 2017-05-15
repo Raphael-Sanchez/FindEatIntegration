@@ -1,0 +1,193 @@
+<div class="modal fade" id="modalResearchRestaurant" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/icons/close-modal.png" alt="button close" id="btn-close-modal"></span></button>
+            </div>
+            <div class="modal-body">
+                <div>Trouvez des résultats en trois étapes</div>
+            </div>
+            <ul class="list-unstyled list-case">
+                <li>
+                    <div class="block-input">
+                        <img src="assets/icons/case-modal.png" alt="icon case checked" class="icon-case-checked">
+                        <label for="restau-type">Quel type de restaurant êtes-vous ?</label>
+                        <input id="restau-type" type="text">
+                    </div>
+                </li>
+                <li>
+                    <div class="block-input">
+                        <img src="assets/icons/case-modal.png" alt="icon case checked" class="icon-case-checked">
+                        <span id="title-product">De quels produits avez-vous besoin ?</span>
+                        <div class="block-check">
+                            <label for="check1" class="checkbox-label" style="margin-left: 0.28vw">Type 1&nbsp;
+                                <input type="checkbox" id="check1">
+                            </label>
+                            &nbsp;
+                            <label for="check2" class="checkbox-label">Type 2&nbsp;
+                                <input type="checkbox" id="check2">
+                            </label>
+                            &nbsp;
+                            <label for="check3" class="checkbox-label">Type 3&nbsp;
+                                <input type="checkbox" id="check3">
+                            </label>
+
+                            <label for="check4" class="checkbox-label">Type 4&nbsp;
+                                <input type="checkbox" id="check4">
+                            </label>
+                            &nbsp;
+                            <label for="check5" class="checkbox-label">Type 5&nbsp;
+                                <input type="checkbox" id="check5">
+                            </label>
+                            &nbsp;
+                            <label for="check6" class="checkbox-label">Type 6&nbsp;
+                                <input type="checkbox" id="check6">
+                            </label>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="block-input">
+                        <img src="assets/icons/case-modal.png" alt="icon case checked" class="icon-case-checked">
+                        <label for="location">Où vous situez-vous ?</label>
+                        <input id="location" type="text">
+                    </div>
+                </li>
+            </ul>
+            <input type="button" id="btn-research" value="Rechercher">
+        </div>
+    </div>
+</div>
+<style>
+    @font-face {
+        font-family: "Gotham-Book";
+        src: url('assets/fonts/gotham/Gotham-Book.otf');
+    }
+
+    @font-face {
+        font-family: "Gotham-Black";
+        src: url('assets/fonts/gotham/Gotham-Black.otf');
+    }
+
+    .modal:before
+    {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 20vh;
+    }
+
+    .modal-header
+    {
+        border: 0px;
+        height: 15px;
+    }
+
+    .modal-body>div
+    {
+        padding-bottom: 2vh;
+    }
+
+    .modal-content
+    {
+        margin: auto;
+        width: 350px;
+        height: 500px;
+        border-radius: 0px;
+        text-align: center;
+        font-family: 'Gotham-Book';
+        font-size: 16px;
+    }
+
+    .close
+    {
+        opacity: 1;
+    }
+
+    #btn-close-modal
+    {
+        width: 1.2em;
+    }
+
+    .icon-case-checked
+    {
+        width: 2.5em;
+        float: left;
+    }
+
+    .list-case
+    {
+        text-align: left;
+        margin-left: 1.5vw;
+    }
+
+    .block-input
+    {
+        width: 90%;
+        display: inline-block;
+        font-family: 'Gotham-Bold';
+        font-size: 13px;
+        text-align: center;
+        padding-bottom: 5vh;
+    }
+
+    .block-input>label
+    {
+        color: #2eebba;
+    }
+
+    .block-input>input
+    {
+        border:none;
+        border-bottom: 1px solid #2eebba;
+        width: 80%;
+        font-family: 'Gotham-Book';
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .block-input>input:focus
+    {
+        outline: none;
+    }
+
+    #title-product
+    {
+        color: #2eebba;
+    }
+
+    .block-check
+    {
+        margin-top: 20px;
+        margin-left: 15%;
+        text-align: center;
+        width: 80%;
+        color: #2eebba;
+    }
+
+    input#btn-research
+    {
+        width: 150px;
+        height: 35px;
+        border: none;
+        border-radius: 45px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 35px;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        background-color: #fc543b;
+    }
+
+    input#btn-research:hover
+    {
+        -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+        box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    }
+
+    input#btn-research:focus
+    {
+        outline: none;
+    }
+</style>
