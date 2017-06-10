@@ -389,6 +389,413 @@ input#email-newsletter:focus
         color: #ffffff!important;
     }
 
+    .title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 22px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .tiret-left
+    {
+        width: 45%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: left;
+    }
+
+    /* SEPARATION LOSANGE */
+    .block-losange
+    {
+        margin-top: 60px;
+    }
+
+    .losange
+    {
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-bottom-color: #f15c22;
+        position: relative;
+        left: 22px;
+        top: -29px;
+        display: inline-block;
+    }
+
+    .losange:after
+    {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: 15px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: #f15c22;
+    }
+
+    .tiret-right
+    {
+        width: 45%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: right;
+    }
+
+    /* WALPAPER BASKET */
+    .wallpaper-basket
+    {
+        width: 80%;
+        height: 190px;
+        margin: auto;
+        background-color: #2aabd2;
+        background-image: url("assets/images/wallpaper-basket.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+    }
+
+    .delivery-block
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    /* BLOCK BASKET TOTAL */
+    .block-basket-details
+    {
+        width: 100%;
+        border: 1px solid #d0d4d9;
+        margin: auto;
+    }
+
+    .header-basket-details
+    {
+        margin: auto;
+        width: 70%;
+        height: 50px;
+        border-left: 1px solid #edecec;
+        border-top: 1px solid #edecec;
+        border-right: 1px solid #edecec;
+        border-bottom: 1px solid #edecec;
+        position: relative;
+        margin-top: -51px;
+        border-radius: 10px;
+        z-index: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+    }
+
+    .header-basket-details>ul
+    {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        list-style: none;
+        font-family: 'Gotham-Medium-Regular';
+        padding: 0;
+    }
+
+    .header-basket-details>li
+    {
+        font-size: 14px;
+    }
+
+    #bag-findeat
+    {
+        width: 35px;
+        margin-left: 40px;
+        margin-top: 25px;
+        display: inline-block;
+    }
+
+    #text-bag-findeat
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        margin-left: 15px;
+        display: inline-block;
+        position: relative;
+        top: 16px;
+    }
+
+    #cent-pourcent-secure>img
+    {
+        width: 14px;
+        margin-right: 25px;
+    }
+
+    #cent-pourcent-secure
+    {
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        background-color: #f15c22;
+        border-radius: 7px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        padding-top: 10px;
+        float: right;
+        margin-top: 35px;
+        margin-right: 40px;
+    }
+
+    /* BLOCK PRODUCTS BASKET */
+    #block-content-products
+    {
+        clear: both;
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    #block-total-basket
+    {
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        border-top: 5px solid #f3f4f5;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .small-title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+
+    .small-info-basket
+    {
+        font-family: 'Gotham-Bold';
+        color: #989797;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 14px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .small-info-basket>div
+    {
+        font-family: 'Gotham-Bold';
+        color: black;
+        font-size: 16px;
+        display: inline-block;
+        float: right;
+    }
+
+    .free-delivery-basket
+    {
+        font-family: 'Gotham-Book'!important;
+        font-size: 12px!important;
+        line-height: 20px;
+        color: #c0c3c5!important;
+    }
+
+    .grey-separator-basket
+    {
+        width: 100%;
+        height: 5px;
+        background-color: #f3f4f5;
+    }
+
+    .tva-small
+    {
+        color: black;
+        font-family: 'Gotham-Bold';
+    }
+
+    #proceed-command
+    {
+        margin-top: 35px;
+        font-family: 'Gotham-Medium-Regular';
+        text-transform: uppercase;
+        color: white;
+        width: 40%;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #f15c22;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    input#proceed-command:hover
+    {
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    input#proceed-command:focus
+    {
+        outline: none;
+    }
+
+    .product-grey
+    {
+        background-color: #f3f4f5;
+    }
+
+    .product-white
+    {
+        background-color: #ffffff;
+    }
+
+    .block-products-basket
+    {
+        height: 220px;
+        width: 100%;
+    }
+
+    .delete-product
+    {
+        display: inline;
+        font-family: 'Gotham-Medium-Regular';
+        font-size: 14px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .icon-delete-product
+    {
+        width: 12px;
+        margin-left: 8px;
+    }
+
+    .img-product-basket
+    {
+        width: 115px;
+        height: 100px;
+        border: 1px solid black;
+        position: relative;
+        top: 60px;
+        left: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .block-product-quantity
+    {
+        width: 470px;
+        height: 100px;
+        position: relative;
+        top: -40px;
+        left: 180px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .product-quantity
+    {
+        font-family: 'Gotham-Medium-Regular';
+        color: black;
+        font-size: 13px;
+        display: inline-block;
+        float: left;
+        text-align: left;
+    }
+
+    .product-provider
+    {
+        color: #868686;
+    }
+
+    .price-product
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 20px;
+    }
+
+    .add-or-remove-product
+    {
+        width: 120px;
+        height: 50px;
+        border: 1px solid #b7b7b8;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.3) inset;
+        float: right;
+        margin-top: -10px;
+    }
+
+    .remove-product
+    {
+        width: 40px;
+        height: 48px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .quantity-add-or-remove
+    {
+        display: inline-block;
+        width: 38px;
+        margin-top: 15px;
+        font-family: 'Gotham-Medium-Regular';
+    }
+
+    .add-product
+    {
+        padding: 0px;
+        width: 40px;
+        height: 48px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: right;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .reassurance-products
+    {
+        width: 100%;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .reassurance-products>img
+    {
+
+        width: 350px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
 
     /* --- FOOTER --- */
     footer
@@ -517,6 +924,411 @@ input#email-newsletter:focus
         color: #ffffff!important;
     }
 
+    .title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 22px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .tiret-left
+    {
+        width: 45%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: left;
+    }
+
+    /* SEPARATION LOSANGE */
+    .block-losange
+    {
+        margin-top: 60px;
+    }
+
+    .losange
+    {
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-bottom-color: #f15c22;
+        position: relative;
+        left: 33px;
+        top: -29px;
+        display: inline-block;
+    }
+
+    .losange:after
+    {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: 15px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: #f15c22;
+    }
+
+    .tiret-right
+    {
+        width: 45%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: right;
+    }
+
+    /* WALPAPER BASKET */
+    .wallpaper-basket
+    {
+        width: 80%;
+        height: 190px;
+        margin: auto;
+        background-color: #2aabd2;
+        background-image: url("assets/images/wallpaper-basket.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+    }
+
+    .delivery-block
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    /* BLOCK BASKET TOTAL */
+    .block-basket-details
+    {
+        width: 98%;
+        border: 1px solid #d0d4d9;
+        margin: auto;
+    }
+
+    .header-basket-details
+    {
+        margin: auto;
+        width: 70%;
+        height: 50px;
+        border-left: 1px solid #edecec;
+        border-top: 1px solid #edecec;
+        border-right: 1px solid #edecec;
+        border-bottom: 1px solid #edecec;
+        position: relative;
+        margin-top: -51px;
+        border-radius: 10px;
+        z-index: 1;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 15px;
+    }
+
+    .header-basket-details>ul
+    {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        list-style: none;
+        font-family: 'Gotham-Medium-Regular';
+        padding: 0;
+    }
+
+    .header-basket-details>li
+    {
+        font-size: 14px;
+    }
+
+    #bag-findeat
+    {
+        width: 35px;
+        margin-left: 40px;
+        margin-top: 25px;
+        display: inline-block;
+    }
+
+    #text-bag-findeat
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        margin-left: 15px;
+        display: inline-block;
+        position: relative;
+        top: 16px;
+    }
+
+    #cent-pourcent-secure>img
+    {
+        width: 14px;
+        margin-right: 25px;
+    }
+
+    #cent-pourcent-secure
+    {
+        display: inline-block;
+        width: 200px;
+        height: 40px;
+        background-color: #f15c22;
+        border-radius: 7px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        padding-top: 10px;
+        float: right;
+        margin-top: 35px;
+        margin-right: 40px;
+    }
+
+    /* BLOCK PRODUCTS BASKET */
+    #block-content-products
+    {
+        clear: both;
+        margin-top: 70px;
+        width: 70%;
+    }
+
+    #block-total-basket
+    {
+        box-sizing: border-box;
+        width: 280px;
+        position: absolute;
+        border-top: 5px solid #f3f4f5;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        text-align: center;
+        display: inline-block;
+        margin-left: 640px;
+        margin-top: -770px;
+    }
+
+    .small-title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+
+    .small-info-basket
+    {
+        font-family: 'Gotham-Bold';
+        color: #989797;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 14px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .small-info-basket>div
+    {
+        font-family: 'Gotham-Bold';
+        color: black;
+        font-size: 16px;
+        display: inline-block;
+        float: right;
+    }
+
+    .free-delivery-basket
+    {
+        font-family: 'Gotham-Book'!important;
+        font-size: 12px!important;
+        line-height: 20px;
+        color: #c0c3c5!important;
+    }
+
+    .grey-separator-basket
+    {
+        width: 100%;
+        height: 5px;
+        background-color: #f3f4f5;
+    }
+
+    .tva-small
+    {
+        color: black;
+        font-family: 'Gotham-Bold';
+    }
+
+    #proceed-command
+    {
+        margin-top: 35px;
+        font-family: 'Gotham-Medium-Regular';
+        text-transform: uppercase;
+        color: white;
+        width: 100%;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #f15c22;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    input#proceed-command:hover
+    {
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    input#proceed-command:focus
+    {
+        outline: none;
+    }
+
+    .product-grey
+    {
+        background-color: #f3f4f5;
+    }
+
+    .product-white
+    {
+        background-color: #ffffff;
+    }
+
+    .block-products-basket
+    {
+        height: 220px;
+        width: 100%;
+    }
+
+    .delete-product
+    {
+        display: inline;
+        font-family: 'Gotham-Medium-Regular';
+        font-size: 14px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .icon-delete-product
+    {
+        width: 12px;
+        margin-left: 8px;
+    }
+
+    .img-product-basket
+    {
+        width: 115px;
+        height: 100px;
+        border: 1px solid black;
+        position: relative;
+        top: 60px;
+        left: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .block-product-quantity
+    {
+        width: 470px;
+        height: 100px;
+        position: relative;
+        top: -40px;
+        left: 160px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .product-quantity
+    {
+        font-family: 'Gotham-Medium-Regular';
+        color: black;
+        font-size: 13px;
+        display: inline-block;
+        float: left;
+        text-align: left;
+    }
+
+    .product-provider
+    {
+        color: #868686;
+    }
+
+    .price-product
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 20px;
+    }
+
+    .add-or-remove-product
+    {
+        width: 120px;
+        height: 50px;
+        border: 1px solid #b7b7b8;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.3) inset;
+        float: right;
+        margin-top: -10px;
+    }
+
+    .remove-product
+    {
+        width: 40px;
+        height: 48px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .quantity-add-or-remove
+    {
+        display: inline-block;
+        width: 38px;
+        margin-top: 15px;
+        font-family: 'Gotham-Medium-Regular';
+    }
+
+    .add-product
+    {
+        padding: 0px;
+        width: 40px;
+        height: 48px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: right;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    .reassurance-products
+    {
+        width: 70%;
+        text-align: right;
+    }
+
+    .reassurance-products>img
+    {
+        width: 350px;
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
 
     /* --- FOOTER --- */
     footer

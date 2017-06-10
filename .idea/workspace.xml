@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f65128a-67f2-4e8c-910c-00d6aad7eb97" name="Default" comment="" />
+    <list default="true" id="4f65128a-67f2-4e8c-910c-00d6aad7eb97" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket.css" afterPath="$PROJECT_DIR$/basket.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket.html" afterPath="$PROJECT_DIR$/basket.html" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,18 +21,38 @@
     <favorites_list name="Intégration Home" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="basket.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basket.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="110" column="40" lean-forward="false" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="40" />
+              <folding>
+                <element signature="e#1912#1918#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2989#2995#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4072#4078#0" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#2;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="basket.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basket.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="829">
+              <caret line="792" column="0" lean-forward="true" selection-start-line="792" selection-start-column="0" selection-end-line="792" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.btn-contact-restorer</find>
-      <find>title-product-research</find>
-      <find>block-prod</find>
-      <find>block-products</find>
-      <find>#product-sold</find>
-      <find>.block-products</find>
-      <find>2eebba</find>
-      <find>v</find>
       <find>product-sold</find>
       <find>no-paddi</find>
       <find>text-wallp</find>
@@ -51,7 +75,18 @@
       <find>shad</find>
       <find>rea</find>
       <find>p</find>
+      <find>img-product-basket</find>
+      <find>block-product-quantity</find>
+      <find>block-to</find>
+      <find>block-total</find>
+      <find>reassurance-products</find>
+      <find>block-total-basket</find>
+      <find>block-produ</find>
+      <find>product-quant</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -101,7 +136,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -130,6 +164,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -268,21 +303,22 @@
       <workItem from="1494160523381" duration="6825000" />
       <workItem from="1494168804538" duration="452000" />
       <workItem from="1494239805590" duration="197000" />
+      <workItem from="1497087402019" duration="4566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="162925000" />
+    <option name="totallyTimeSpent" value="167491000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1631664" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -459,8 +495,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basket.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="126" column="14" lean-forward="false" selection-start-line="126" selection-start-column="14" selection-end-line="126" selection-end-column="14" />
+        <state relative-caret-position="303">
+          <caret line="110" column="40" lean-forward="false" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="40" />
           <folding>
             <element signature="e#1912#1918#0" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -474,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basket.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="80" column="15" lean-forward="true" selection-start-line="80" selection-start-column="15" selection-end-line="80" selection-end-column="15" />
+        <state relative-caret-position="829">
+          <caret line="792" column="0" lean-forward="true" selection-start-line="792" selection-start-column="0" selection-end-line="792" selection-end-column="0" />
           <folding />
         </state>
       </provider>
