@@ -212,10 +212,516 @@ input#email-newsletter:focus
 /* -------------------------------- MEDIA QUERIES FORMAT (<768px,>=768px 992px, 1200px) -------------------------------- */
 @media(min-width: 320px)
 {
+    /* -------------------- NAVBAR  -------------------- */
+    nav
+    {
+        background-color: #ffffff!important;
+        height: 80px!important;
+        border: 0px!important;
+    }
+
+    img#logo-find-eat
+    {
+        margin-top: 5px;
+        height: 70px;
+    }
+
     /* --- NAVBAR BUTTON STYLE --- */
     #block-btn
     {
         display: none;
+    }
+
+    /* --- NAVBAR BUTTON LINKS --- */
+    a>input.btn-navbar
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-navbar:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-navbar:hover
+    {
+        background-color: #f15c22;
+        color: #ffffff!important;
+    }
+
+    .title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 22px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .tiret-left
+    {
+        width: 40%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: left;
+    }
+
+    /* SEPARATION LOSANGE */
+    .block-losange
+    {
+        margin-top: 60px;
+    }
+
+    .losange
+    {
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-bottom-color: #f15c22;
+        position: relative;
+        left: 22px;
+        top: -29px;
+        display: inline-block;
+    }
+
+    .losange:after
+    {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: 15px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: #f15c22;
+    }
+
+    .tiret-right
+    {
+        width: 40%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: right;
+    }
+
+    /* WALPAPER BASKET */
+    .wallpaper-basket
+    {
+        width: 100%;
+        height: 190px;
+        margin: auto;
+        background-color: #2aabd2;
+        background-image: url("assets/images/wallpaper-basket.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+    }
+
+    .delivery-block
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 15px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    /* BLOCK BASKET TOTAL */
+    .block-basket-details
+    {
+        width: 100%;
+        border: 1px solid #d0d4d9;
+        margin: auto;
+    }
+
+    .header-basket-details
+    {
+        margin: auto;
+        width: 80%;
+        height: 50px;
+        border-left: 1px solid #edecec;
+        border-top: 1px solid #edecec;
+        border-right: 1px solid #edecec;
+        border-bottom: 1px solid #edecec;
+        position: relative;
+        margin-top: -51px;
+        border-radius: 10px;
+        z-index: 1;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-top: 15px;
+    }
+
+    .header-basket-details>ul
+    {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        list-style: none;
+        font-family: 'Gotham-Medium-Regular';
+        padding: 0;
+    }
+
+    .header-basket-details>li
+    {
+        font-size: 12px;
+    }
+
+    #bag-findeat
+    {
+        width: 35px;
+        margin-left: 10px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    #text-bag-findeat
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        margin-left: 15px;
+        display: inline-block;
+        position: relative;
+        top: 16px;
+    }
+
+    #cent-pourcent-secure>img
+    {
+        width: 14px;
+        margin-right: 25px;
+    }
+
+    #cent-pourcent-secure
+    {
+        display: inline-block;
+        width: 170px;
+        height: 35px;
+        background-color: #f15c22;
+        border-radius: 7px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        padding-top: 8px;
+        float: right;
+        margin-top: 25px;
+        margin-right: 10px;
+    }
+
+    /* BLOCK PRODUCTS BASKET */
+    #block-content-products
+    {
+        clear: both;
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    #block-total-basket
+    {
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        border-top: 5px solid #f3f4f5;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .small-title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+
+    .small-info-basket
+    {
+        font-family: 'Gotham-Bold';
+        color: #989797;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 14px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .small-info-basket>div
+    {
+        font-family: 'Gotham-Bold';
+        color: black;
+        font-size: 16px;
+        display: inline-block;
+        float: right;
+    }
+
+    .free-delivery-basket
+    {
+        font-family: 'Gotham-Book'!important;
+        font-size: 12px!important;
+        line-height: 20px;
+        color: #c0c3c5!important;
+    }
+
+    .grey-separator-basket
+    {
+        width: 100%;
+        height: 5px;
+        background-color: #f3f4f5;
+    }
+
+    .tva-small
+    {
+        color: black;
+        font-family: 'Gotham-Bold';
+    }
+
+    #proceed-command
+    {
+        margin-top: 35px;
+        font-family: 'Gotham-Medium-Regular';
+        text-transform: uppercase;
+        color: white;
+        width: 250px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #f15c22;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    input#proceed-command:hover
+    {
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    input#proceed-command:focus
+    {
+        outline: none;
+    }
+
+    .product-grey
+    {
+        background-color: #f3f4f5;
+    }
+
+    .product-white
+    {
+        background-color: #ffffff;
+    }
+
+    .block-products-basket
+    {
+        height: 210px;
+        width: 100%;
+    }
+
+    .delete-product
+    {
+        display: inline;
+        font-family: 'Gotham-Medium-Regular';
+        font-size: 14px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .icon-delete-product
+    {
+        width: 12px;
+        margin-left: 8px;
+    }
+
+    .img-product-basket
+    {
+        width: 115px;
+        height: 100px;
+        border: 1px solid black;
+        position: relative;
+        top: 60px;
+        left: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .block-product-quantity
+    {
+        width: 65%;
+        height: 100px;
+        position: relative;
+        top: -63px;
+        left: 35%;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .product-quantity
+    {
+        font-family: 'Gotham-Medium-Regular';
+        color: black;
+        font-size: 13px;
+        display: inline-block;
+        float: left;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .product-provider
+    {
+        color: #868686;
+    }
+
+    .price-product
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 20px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+        width: 100px;
+        text-align: left;
+    }
+
+    .add-or-remove-product
+    {
+        width: 113px;
+        height: 40px;
+        border: 1px solid #b7b7b8;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.3) inset;
+        margin-top: 70px;
+        margin-left: 20px;
+    }
+
+    .remove-product
+    {
+        width: 35px;
+        height: 38px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 6px;
+    }
+
+    .quantity-add-or-remove
+    {
+        display: inline-block;
+        width: 38px;
+        margin-top: 10px;
+        font-family: 'Gotham-Medium-Regular';
+    }
+
+    .add-product
+    {
+        padding: 0px;
+        width: 35px;
+        height: 38px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: right;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 7px;
+    }
+
+    .reassurance-products
+    {
+        width: 100%;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .reassurance-products>img
+    {
+
+        width: 350px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* --- FOOTER --- */
+    footer
+    {
+        width: 100%;
+        height: 370px;
+        margin-top: 100px;
+        background-color: #f3f4f5;
+        position: relative;
+        bottom: 0;
+        padding-top: 0px;
+    }
+
+    img#findeat-logo-footer
+    {
+        display: inline-block;
+        width: 70px;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+    .logo-footer
+    {
+        width: 20px;
+        float: right;
+        margin-top: 37px;
+    }
+
+    .right-10
+    {
+        margin-right: 15px;
+    }
+
+    #hr-footer
+    {
+        background-color: #d9d7d1;
+        height: 1px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .footer-ul
+    {
+        padding: 0px!important;
+    }
+
+    .title-footer-li
+    {
+        padding-top: 40px!important;
+        font-size: 13px!important;
+    }
+
+    .footer-ul>li
+    {
+        padding-top: 8px;
+        font-size: 11px;
+    }
+
+    input#email-newsletter
+    {
+        width: 200px;
     }
 
     /* --- FOOTER --- */
@@ -285,7 +791,448 @@ input#email-newsletter:focus
 @media(min-width: 480px)
 {
 
+    /* -------------------- NAVBAR  -------------------- */
+    nav
+    {
+        background-color: #ffffff!important;
+        height: 80px!important;
+        border: 0px!important;
+    }
 
+    img#logo-find-eat
+    {
+        margin-top: 5px;
+        height: 70px;
+    }
+
+    /* --- NAVBAR BUTTON STYLE --- */
+    #block-btn
+    {
+        display: none;
+    }
+
+    /* --- NAVBAR BUTTON LINKS --- */
+    a>input.btn-navbar
+    {
+        text-decoration: none;
+    }
+
+    a>input.btn-navbar:focus
+    {
+        outline: none;
+    }
+
+    a>input.btn-navbar:hover
+    {
+        background-color: #f15c22;
+        color: #ffffff!important;
+    }
+
+    .title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 22px;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .tiret-left
+    {
+        width: 45%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: left;
+    }
+
+    /* SEPARATION LOSANGE */
+    .block-losange
+    {
+        margin-top: 60px;
+    }
+
+    .losange
+    {
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-bottom-color: #f15c22;
+        position: relative;
+        left: 8px;
+        top: -29px;
+        display: inline-block;
+    }
+
+    .losange:after
+    {
+        content: '';
+        position: absolute;
+        right: -15px;
+        top: 15px;
+        width: 0;
+        height: 0;
+        border: 15px solid transparent;
+        border-top-color: #f15c22;
+    }
+
+    .tiret-right
+    {
+        width: 45%;
+        height: 1px;
+        background-color: #000000;
+        display: inline-block;
+        float: right;
+    }
+
+    /* WALPAPER BASKET */
+    .wallpaper-basket
+    {
+        width: 80%;
+        height: 190px;
+        margin: auto;
+        background-color: #2aabd2;
+        background-image: url("assets/images/wallpaper-basket.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 30px;
+    }
+
+    .delivery-block
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 15px;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    /* BLOCK BASKET TOTAL */
+    .block-basket-details
+    {
+        width: 100%;
+        border: 1px solid #d0d4d9;
+        margin: auto;
+    }
+
+    .header-basket-details
+    {
+        margin: auto;
+        width: 80%;
+        height: 50px;
+        border-left: 1px solid #edecec;
+        border-top: 1px solid #edecec;
+        border-right: 1px solid #edecec;
+        border-bottom: 1px solid #edecec;
+        position: relative;
+        margin-top: -51px;
+        border-radius: 10px;
+        z-index: 1;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+
+    .header-basket-details>ul
+    {
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        list-style: none;
+        font-family: 'Gotham-Medium-Regular';
+        padding: 0;
+    }
+
+    .header-basket-details>li
+    {
+        font-size: 14px;
+    }
+
+    #bag-findeat
+    {
+        width: 35px;
+        margin-left: 20px;
+        margin-top: 20px;
+        display: inline-block;
+    }
+
+    #text-bag-findeat
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        margin-left: 15px;
+        display: inline-block;
+        position: relative;
+        top: 16px;
+    }
+
+    #cent-pourcent-secure>img
+    {
+        width: 14px;
+        margin-right: 25px;
+    }
+
+    #cent-pourcent-secure
+    {
+        display: inline-block;
+        width: 170px;
+        height: 35px;
+        background-color: #f15c22;
+        border-radius: 7px;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        padding-top: 8px;
+        float: right;
+        margin-top: 25px;
+        margin-right: 20px;
+    }
+
+    /* BLOCK PRODUCTS BASKET */
+    #block-content-products
+    {
+        clear: both;
+        margin-top: 70px;
+        width: 100%;
+    }
+
+    #block-total-basket
+    {
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        border-top: 5px solid #f3f4f5;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-top: 20px;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+
+    .small-title-basket
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+
+    .small-info-basket
+    {
+        font-family: 'Gotham-Bold';
+        color: #989797;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 14px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 100%;
+        display: inline-block;
+    }
+
+    .small-info-basket>div
+    {
+        font-family: 'Gotham-Bold';
+        color: black;
+        font-size: 16px;
+        display: inline-block;
+        float: right;
+    }
+
+    .free-delivery-basket
+    {
+        font-family: 'Gotham-Book'!important;
+        font-size: 12px!important;
+        line-height: 20px;
+        color: #c0c3c5!important;
+    }
+
+    .grey-separator-basket
+    {
+        width: 100%;
+        height: 5px;
+        background-color: #f3f4f5;
+    }
+
+    .tva-small
+    {
+        color: black;
+        font-family: 'Gotham-Bold';
+    }
+
+    #proceed-command
+    {
+        margin-top: 35px;
+        font-family: 'Gotham-Medium-Regular';
+        text-transform: uppercase;
+        color: white;
+        width: 250px;
+        height: 35px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #f15c22;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    input#proceed-command:hover
+    {
+        -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    }
+
+    input#proceed-command:focus
+    {
+        outline: none;
+    }
+
+    .product-grey
+    {
+        background-color: #f3f4f5;
+    }
+
+    .product-white
+    {
+        background-color: #ffffff;
+    }
+
+    .block-products-basket
+    {
+        height: 210px;
+        width: 100%;
+    }
+
+    .delete-product
+    {
+        display: inline;
+        font-family: 'Gotham-Medium-Regular';
+        font-size: 14px;
+        float: right;
+        margin-top: 10px;
+        margin-right: 15px;
+    }
+
+    .icon-delete-product
+    {
+        width: 12px;
+        margin-left: 8px;
+    }
+
+    .img-product-basket
+    {
+        width: 115px;
+        height: 100px;
+        border: 1px solid black;
+        position: relative;
+        top: 60px;
+        left: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .block-product-quantity
+    {
+        width: 65%;
+        height: 100px;
+        position: relative;
+        top: -63px;
+        left: 35%;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .product-quantity
+    {
+        font-family: 'Gotham-Medium-Regular';
+        color: black;
+        font-size: 13px;
+        display: inline-block;
+        float: left;
+        text-align: left;
+    }
+
+    .product-provider
+    {
+        color: #868686;
+    }
+
+    .price-product
+    {
+        font-family: 'Gotham-Bold';
+        font-size: 20px;
+    }
+
+    .add-or-remove-product
+    {
+        width: 113px;
+        height: 40px;
+        border: 1px solid #b7b7b8;
+        border-radius: 5px;
+        background-color: #ffffff;
+        box-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.3) inset;
+        margin-top: 50px;
+    }
+
+    .remove-product
+    {
+        width: 35px;
+        height: 38px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 6px;
+    }
+
+    .quantity-add-or-remove
+    {
+        display: inline-block;
+        width: 38px;
+        margin-top: 10px;
+        font-family: 'Gotham-Medium-Regular';
+    }
+
+    .add-product
+    {
+        padding: 0px;
+        width: 35px;
+        height: 38px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: right;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 7px;
+    }
+
+    .reassurance-products
+    {
+        width: 100%;
+        text-align: left;
+        margin-left: 20px;
+    }
+
+    .reassurance-products>img
+    {
+
+        width: 350px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
 
     /* --- FOOTER --- */
     footer

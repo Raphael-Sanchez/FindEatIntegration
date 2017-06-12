@@ -4,7 +4,6 @@
     <list default="true" id="4f65128a-67f2-4e8c-910c-00d6aad7eb97" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket.css" afterPath="$PROJECT_DIR$/basket.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basket.html" afterPath="$PROJECT_DIR$/basket.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,11 +20,11 @@
     <favorites_list name="Intégration Home" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="basket.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basket.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
+            <state relative-caret-position="1650">
               <caret line="110" column="40" lean-forward="false" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="40" />
               <folding>
                 <element signature="e#1912#1918#0" expanded="true" />
@@ -42,8 +41,8 @@
       <file leaf-file-name="basket.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basket.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="829">
-              <caret line="792" column="0" lean-forward="true" selection-start-line="792" selection-start-column="0" selection-end-line="792" selection-end-column="0" />
+            <state relative-caret-position="349">
+              <caret line="590" column="17" lean-forward="false" selection-start-line="590" selection-start-column="17" selection-end-line="590" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -53,14 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>product-sold</find>
-      <find>no-paddi</find>
-      <find>text-wallp</find>
-      <find>text-wa</find>
-      <find>IMG PRODUC</find>
-      <find>992</find>
-      <find>768</find>
-      <find>text-provider-profil</find>
       <find>none</find>
       <find>li</find>
       <find>ul</find>
@@ -79,10 +70,18 @@
       <find>block-product-quantity</find>
       <find>block-to</find>
       <find>block-total</find>
-      <find>reassurance-products</find>
       <find>block-total-basket</find>
       <find>block-produ</find>
+      <find>block-product-qu</find>
+      <find>block-products-bas</find>
+      <find>header-bas</find>
+      <find>img-prod</find>
+      <find>product</find>
       <find>product-quant</find>
+      <find>price-product</find>
+      <find>reass</find>
+      <find>reassurance-products</find>
+      <find>price-</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -303,18 +302,19 @@
       <workItem from="1494160523381" duration="6825000" />
       <workItem from="1494168804538" duration="452000" />
       <workItem from="1494239805590" duration="197000" />
-      <workItem from="1497087402019" duration="4566000" />
+      <workItem from="1497087402019" duration="4749000" />
+      <workItem from="1497287260608" duration="4898000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="167491000" />
+    <option name="totallyTimeSpent" value="172572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16558966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16801292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -363,6 +363,29 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/basket.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="110" column="40" lean-forward="false" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="40" />
+          <folding>
+            <element signature="e#1912#1918#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2989#2995#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4072#4078#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#3;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basket.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/restorer-research.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -495,7 +518,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basket.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
+        <state relative-caret-position="1650">
           <caret line="110" column="40" lean-forward="false" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="40" />
           <folding>
             <element signature="e#1912#1918#0" expanded="true" />
@@ -510,8 +533,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basket.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="792" column="0" lean-forward="true" selection-start-line="792" selection-start-column="0" selection-end-line="792" selection-end-column="0" />
+        <state relative-caret-position="349">
+          <caret line="590" column="17" lean-forward="false" selection-start-line="590" selection-start-column="17" selection-end-line="590" selection-end-column="17" />
           <folding />
         </state>
       </provider>
