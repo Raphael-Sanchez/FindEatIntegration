@@ -2005,3 +2005,295 @@ input#email-newsletter:focus
         right: 40px;
     }
 }
+
+
+
+
+/* MODAL */
+.modal-header
+{
+    border-bottom: 0px!important;
+}
+
+.modal-content
+{
+    border-radius: 0px!important;
+}
+/* END MODAL */
+
+
+/* -------------- MODAL RESEARCH CSS -------------- */
+.modal:before
+{
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 20vh;
+}
+
+.modal-header-research
+{
+    border: 0px;
+    height: 15px;
+}
+
+.modal-body-research>div
+{
+    padding-bottom: 2vh;
+}
+
+.modal-content-research
+{
+    margin: auto;
+    width: 350px;
+    height: 500px;
+    border-radius: 0px;
+    text-align: center;
+    font-family: 'Gotham-Book';
+    font-size: 16px;
+}
+
+.close
+{
+    opacity: 1;
+}
+
+#btn-close-modal
+{
+    width: 1.2em;
+}
+
+.icon-case-checked
+{
+    width: 2.5em;
+    float: left;
+}
+
+.list-case
+{
+    text-align: left;
+    margin-left: 1.5vw;
+}
+
+.block-input
+{
+    width: 90%;
+    display: inline-block;
+    font-family: 'Gotham-Bold';
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+.block-input>label
+{
+    color: #2eebba;
+}
+
+.block-input>input
+{
+    border:none;
+    border-bottom: 1px solid #2eebba;
+    width: 80%;
+    font-family: 'Gotham-Book';
+    font-size: 12px;
+    text-align: left;
+}
+
+.block-input>input:focus
+{
+    outline: none;
+}
+
+#title-product
+{
+    color: #2eebba;
+}
+
+.block-check
+{
+    margin-top: 20px;
+    margin-left: 15%;
+    text-align: center;
+    width: 80%;
+    color: #2eebba;
+}
+
+input#btn-research
+{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 45px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 35px;
+    color: #ffffff;
+    font-family: 'Gotham-Book';
+    background-color: #fc543b;
+}
+
+input#btn-research:hover
+{
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+}
+
+input#btn-research:focus
+{
+    outline: none;
+}
+/* ------------- END MODAL RESEARCH ------------- */
+
+
+
+/* ------------- MODAL REGISTER ------------- */
+.modal:before
+{
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 20vh;
+}
+
+.modal-header-register
+{
+    border: 0px;
+    height: 15px;
+}
+
+.modal-content-register
+{
+    margin: auto;
+    width: 350px;
+    height: 530px;
+    border-radius: 0px;
+    text-align: center;
+    font-family: 'Gotham-Book';
+    font-size: 16px;
+}
+
+.modal-body-register
+{
+    color: #2eebba;
+}
+
+.modal-body-register>h1
+{
+    font-size: 30px;
+}
+
+.modal-body-register>div
+{
+    font-size: 10px;
+}
+
+.close
+{
+    opacity: 1;
+}
+
+#btn-close-modal
+{
+    width: 1.2em;
+}
+
+.icon-case-checked
+{
+    width: 2.5em;
+    float: left;
+}
+
+.block-input-register
+{
+    margin: auto;
+    width: 90%;
+    display: block;
+    font-family: 'Gotham-Bold';
+    font-size: 14px;
+    text-align: center;
+    color: #2eebba;
+}
+
+.block-input-register>input
+{
+    border:none;
+    border-bottom: 1px solid #2eebba;
+    width: 80%;
+    font-family: 'Gotham-Book';
+    font-size: 13px;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+#firstname
+{
+    margin-top: 20px;
+}
+
+.block-input-register>input:-moz-placeholder
+{
+    color: #2eebba;
+}
+
+.block-input-register>input::-webkit-input-placeholder {
+    color: #2eebba;
+}
+
+.block-input-register>input:-moz-placeholder { /* Firefox 18- */
+    color: #2eebba;
+}
+
+.block-input-register>input::-moz-placeholder {  /* Firefox 19+ */
+    color: #2eebba;
+}
+
+.block-input-register>input:-ms-input-placeholder {
+    color: #2eebba;
+}
+
+.block-input-register>input:focus
+{
+    outline: none;
+}
+
+#conditions
+{
+    margin: auto;
+    text-align: center;
+    font-size: 9px;
+    width: 80%;
+    margin-top: 30px;
+    font-family: 'Gotham-Book';
+}
+
+input#btn-register
+{
+    width: 150px;
+    height: 35px;
+    border: none;
+    border-radius: 45px;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 35px;
+    color: #ffffff;
+    font-family: 'Gotham-Book';
+    background-color: #fc543b;
+    margin-top: 30px;
+}
+
+input#btn-register:hover
+{
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+}
+
+input#btn-register:focus
+{
+    outline: none;
+}
+/* ------------- END MODAL REGISTER ------------- */

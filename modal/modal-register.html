@@ -1,0 +1,187 @@
+<!-- MODAL REGISTER -->
+<div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="../assets/icons/close-modal.png" alt="button close" id="btn-close-modal"></span></button>
+            </div>
+
+            <div class="modal-body">
+                <h1>Inscription</h1>
+                <div>Lancez vous c'est gratuit</div>
+            </div>
+
+            <div class="block-input">
+                <input type="text" id="firstname" placeholder="Prénom">
+                <input type="text" placeholder="Nom">
+                <input type="text" placeholder="Adresse mail">
+                <input type="text" placeholder="Mot de passe">
+
+                <p id="conditions">En cliquant sur S’inscrire, vous acceptez les Conditions d’utilisation, la Politique de confidentialité, et la Politique relative aux cookies de FindEat.</p>
+            </div>
+
+            <input type="button" id="btn-register" value="S'inscrire">
+        </div>
+    </div>
+</div>
+
+<style>
+    @font-face {
+        font-family: "Gotham-Book";
+        src: url('assets/fonts/gotham/Gotham-Book.otf');
+    }
+
+    @font-face {
+        font-family: "Gotham-Black";
+        src: url('assets/fonts/gotham/Gotham-Black.otf');
+    }
+
+    .modal:before
+    {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 20vh;
+    }
+
+    .modal-header
+    {
+        border: 0px;
+        height: 15px;
+    }
+
+    .modal-content
+    {
+        margin: auto;
+        width: 350px;
+        height: 530px;
+        border-radius: 0px;
+        text-align: center;
+        font-family: 'Gotham-Book';
+        font-size: 16px;
+    }
+
+    .modal-body
+    {
+        color: #2eebba;
+    }
+
+    .modal-body>h1
+    {
+        font-size: 30px;
+    }
+
+    .modal-body>div
+    {
+        font-size: 10px;
+    }
+
+    .close
+    {
+        opacity: 1;
+    }
+
+    #btn-close-modal
+    {
+        width: 1.2em;
+    }
+
+    .icon-case-checked
+    {
+        width: 2.5em;
+        float: left;
+    }
+
+    .block-input
+    {
+        margin: auto;
+        width: 90%;
+        display: block;
+        font-family: 'Gotham-Bold';
+        font-size: 14px;
+        text-align: center;
+        color: #2eebba;
+    }
+
+    .block-input>input
+    {
+        border:none;
+        border-bottom: 1px solid #2eebba;
+        width: 80%;
+        font-family: 'Gotham-Book';
+        font-size: 13px;
+        text-align: left;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        margin-top: 30px;
+    }
+
+    #firstname
+    {
+        margin-top: 0px;
+    }
+
+
+    .block-input>input:-moz-placeholder
+    {
+        color: #2eebba;
+    }
+
+    .block-input>input::-webkit-input-placeholder {
+        color: #2eebba;
+    }
+
+    .block-input>input:-moz-placeholder { /* Firefox 18- */
+        color: #2eebba;
+    }
+
+    .block-input>input::-moz-placeholder {  /* Firefox 19+ */
+        color: #2eebba;
+    }
+
+    .block-input>input:-ms-input-placeholder {
+        color: #2eebba;
+    }
+
+    .block-input>input:focus
+    {
+        outline: none;
+    }
+
+    #conditions
+    {
+        margin: auto;
+        text-align: center;
+        font-size: 9px;
+        width: 80%;
+        margin-top: 30px;
+        font-family: 'Gotham-Book';
+    }
+
+    input#btn-register
+    {
+        width: 150px;
+        height: 35px;
+        border: none;
+        border-radius: 45px;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 35px;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        background-color: #fc543b;
+    }
+
+    input#btn-register:hover
+    {
+        -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+        box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    }
+
+    input#btn-register:focus
+    {
+        outline: none;
+    }
+</style>

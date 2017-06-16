@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f65128a-67f2-4e8c-910c-00d6aad7eb97" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/restorer-research.css" afterPath="$PROJECT_DIR$/provider-research.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/restorer-research.html" afterPath="$PROJECT_DIR$/provider-research.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/images/wallpaper-video.png" afterPath="$PROJECT_DIR$/assets/images/wallpaper-video.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modal/modal-register.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/payment.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/payment.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delivery.css" afterPath="$PROJECT_DIR$/delivery.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/delivery.html" afterPath="$PROJECT_DIR$/delivery.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.css" afterPath="$PROJECT_DIR$/home.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.html" afterPath="$PROJECT_DIR$/home.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,40 +26,74 @@
     <favorites_list name="Intégration Home" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#8598#8604#0" expanded="true" />
+                <element signature="e#8750#8756#0" expanded="true" />
+                <element signature="e#8839#8845#0" expanded="true" />
+                <element signature="e#8991#8997#0" expanded="true" />
+                <element signature="e#9079#9085#0" expanded="true" />
+                <element signature="e#9283#9289#0" expanded="true" />
+                <element signature="e#9435#9441#0" expanded="true" />
+                <element signature="e#9526#9532#0" expanded="true" />
+                <element signature="e#9678#9684#0" expanded="true" />
+                <element signature="n#style#0;n#label#5;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#9791#9797#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/home.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="2020" column="1" lean-forward="false" selection-start-line="2020" selection-start-column="1" selection-end-line="2020" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>block-to</find>
-      <find>block-total</find>
-      <find>block-total-basket</find>
-      <find>block-produ</find>
-      <find>block-product-qu</find>
-      <find>block-products-bas</find>
-      <find>header-bas</find>
-      <find>img-prod</find>
-      <find>product</find>
-      <find>product-quant</find>
-      <find>price-product</find>
-      <find>reassurance-products</find>
-      <find>price-</find>
-      <find>delivery-</find>
-      <find>red</find>
-      <find>focus</find>
-      <find>hover</find>
-      <find>ul</find>
-      <find>width: 70%;         margin: auto;         padding: 0;         text-align: center;         white-space: nowrap;         border: 1px solid #edecec;         border-radius: 5px;</find>
-      <find>reass</find>
-      <find>5</find>
-      <find>delivery-block</find>
-      <find>btn-valid-and-continue</find>
-      <find>flo</find>
-      <find>#delivery-form</find>
       <find>#resume-basket</find>
       <find>title-wallpaper</find>
       <find>li-last</find>
       <find>restaur</find>
       <find>research</find>
+      <find>del</find>
+      <find>delivery-form&gt;p</find>
+      <find>#del</find>
+      <find>#delivery-form&gt;p</find>
+      <find>resu</find>
+      <find>block-total</find>
+      <find>block-total-resu</find>
+      <find>block-total-resume</find>
+      <find>ul-block-delivery-path</find>
+      <find>scrol</find>
+      <find>#block-total-resume</find>
+      <find>list-case</find>
+      <find>block-check</find>
+      <find>title-product</find>
+      <find>btn-research</find>
+      <find>btn-register</find>
+      <find>conditions</find>
+      <find>.block-input</find>
+      <find>block-input</find>
+      <find>firstname</find>
+      <find>icon-case-checked</find>
+      <find>modal-body</find>
+      <find>modal-content</find>
+      <find>modal-header</find>
+      <find>modal</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,21 +104,24 @@
       <list>
         <option value="$PROJECT_DIR$/hamburger.min.css" />
         <option value="$PROJECT_DIR$/home.js" />
-        <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/visitor-type.html" />
         <option value="$PROJECT_DIR$/visitor-type.css" />
-        <option value="$PROJECT_DIR$/modal/modal-research-restaurant.html" />
         <option value="$PROJECT_DIR$/restorer-research.html" />
         <option value="$PROJECT_DIR$/restorer-profil.html" />
         <option value="$PROJECT_DIR$/provider-profil.css" />
         <option value="$PROJECT_DIR$/provider-profil.html" />
         <option value="$PROJECT_DIR$/basket.css" />
         <option value="$PROJECT_DIR$/basket.html" />
-        <option value="$PROJECT_DIR$/delivery.html" />
-        <option value="$PROJECT_DIR$/delivery.css" />
-        <option value="$PROJECT_DIR$/home.css" />
         <option value="$PROJECT_DIR$/provider-research.html" />
         <option value="$PROJECT_DIR$/provider-research.css" />
+        <option value="$PROJECT_DIR$/payment.css" />
+        <option value="$PROJECT_DIR$/delivery.css" />
+        <option value="$PROJECT_DIR$/delivery.html" />
+        <option value="$PROJECT_DIR$/payment.html" />
+        <option value="$PROJECT_DIR$/modal/modal-research-restaurant.html" />
+        <option value="$PROJECT_DIR$/modal/modal-register.html" />
+        <option value="$PROJECT_DIR$/home.css" />
+        <option value="$PROJECT_DIR$/home.html" />
       </list>
     </option>
   </component>
@@ -111,8 +151,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -135,7 +175,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="modal" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -149,7 +189,6 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -285,17 +324,19 @@
       <workItem from="1497506905916" duration="2104000" />
       <workItem from="1497613881905" duration="3000" />
       <workItem from="1497613892591" duration="1401000" />
+      <workItem from="1497615602236" duration="4000" />
+      <workItem from="1497632015642" duration="8518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188508000" />
+    <option name="totallyTimeSpent" value="197030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17770597" sideWeight="0.49452055" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1825525" sideWeight="0.49452055" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -323,7 +364,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17770597" sideWeight="0.49452055" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1825525" sideWeight="0.49452055" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -344,6 +385,56 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/provider-research.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="525" column="5" lean-forward="true" selection-start-line="525" selection-start-column="5" selection-end-line="525" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/provider-research.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="2248" column="57" lean-forward="false" selection-start-line="2248" selection-start-column="57" selection-end-line="2248" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="64" column="83" lean-forward="false" selection-start-line="64" selection-start-column="64" selection-end-line="64" selection-end-column="83" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delivery.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="2230" column="23" lean-forward="false" selection-start-line="2230" selection-start-column="23" selection-end-line="2230" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/payment.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="68" column="82" lean-forward="false" selection-start-line="68" selection-start-column="82" selection-end-line="68" selection-end-column="82" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/provider-profil.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -352,35 +443,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/modal/modal-register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="186" column="8" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="186" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modal/modal-research-restaurant.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="192" column="8" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="192" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="1344" column="0" lean-forward="true" selection-start-line="1344" selection-start-column="0" selection-end-line="1344" selection-end-column="0" />
+        <state relative-caret-position="555">
+          <caret line="2020" column="1" lean-forward="false" selection-start-line="2020" selection-start-column="1" selection-end-line="2020" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-research.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="525" column="5" lean-forward="true" selection-start-line="525" selection-start-column="5" selection-end-line="525" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/provider-research.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="38" column="47" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="-102">
+          <caret line="173" column="0" lean-forward="true" selection-start-line="173" selection-start-column="0" selection-end-line="173" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#8598#8604#0" expanded="true" />
+            <element signature="e#8750#8756#0" expanded="true" />
+            <element signature="e#8839#8845#0" expanded="true" />
+            <element signature="e#8991#8997#0" expanded="true" />
+            <element signature="e#9079#9085#0" expanded="true" />
+            <element signature="e#9283#9289#0" expanded="true" />
+            <element signature="e#9435#9441#0" expanded="true" />
+            <element signature="e#9526#9532#0" expanded="true" />
+            <element signature="e#9678#9684#0" expanded="true" />
+            <element signature="n#style#0;n#label#5;n#div#0;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#9791#9797#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

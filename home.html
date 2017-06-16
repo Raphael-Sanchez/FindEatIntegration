@@ -135,9 +135,115 @@
             </div>
         </div>
     </footer>
+
+    <!-- MODAL FILTERS -->
+    <div class="modal fade" id="modalResearchRestaurant" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-research">
+                <div class="modal-header modal-header-research">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/icons/close-modal.png" alt="button close" id="btn-close-modal"></span></button>
+                </div>
+                <div class="modal-body modal-body-research">
+                    <div>Trouvez des résultats en trois étapes</div>
+                </div>
+                <ul class="list-unstyled list-case">
+                    <li>
+                        <div class="block-input">
+                            <img src="assets/icons/case-modal.png" alt="icon case checked" class="icon-case-checked">
+                            <label for="restau-type">Quel type de restaurant êtes-vous ?</label>
+                            <input id="restau-type" type="text">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block-input">
+                            <img src="assets/icons/case-modal.png" alt="icon case checked" class="icon-case-checked">
+                            <span id="title-product">De quels produits avez-vous besoin ?</span>
+                            <div class="block-check">
+
+                                <label for="check1" class="checkbox-label" style="margin-left: 0.28vw">Fruits&nbsp;
+                                    <input type="checkbox" id="check1">
+                                </label>
+                                &nbsp;
+                                <label for="check2" class="checkbox-label">Légumes&nbsp;
+                                    <input type="checkbox" id="check2">
+                                </label>
+                                &nbsp;
+                                <label for="check3" class="checkbox-label">Sauces&nbsp;
+                                    <input type="checkbox" id="check3">
+                                </label>
+
+                                <label for="check4" class="checkbox-label">Boissons&nbsp;
+                                    <input type="checkbox" id="check4">
+                                </label>
+                                &nbsp;
+                                <label for="check5" class="checkbox-label">Équitable&nbsp;
+                                    <input type="checkbox" id="check5">
+                                </label>
+                                &nbsp;
+                                <label for="check6" class="checkbox-label" style="margin-left: 0.28vw">Bio&nbsp;
+                                    <input type="checkbox" id="check6">
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block-input">
+                            <img src="assets/icons/case-modal.png" alt="icon case checked" class="icon-case-checked">
+                            <label for="location">Où vous situez-vous ?</label>
+                            <input id="location" type="text">
+                        </div>
+                    </li>
+                </ul>
+                <input type="button" id="btn-research" value="Rechercher">
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL REGISTER -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-content-register">
+
+                <div class="modal-header modal-header-register">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/icons/close-modal.png" alt="button close" id="btn-close-modal"></span></button>
+                </div>
+
+                <div class="modal-body modal-body-register">
+                    <h1>Inscription</h1>
+                    <div>Lancez vous c'est gratuit</div>
+                </div>
+
+                <div class="block-input-register">
+                    <input type="text" id="firstname" placeholder="Prénom">
+                    <input type="text" placeholder="Nom">
+                    <input type="text" placeholder="Adresse mail">
+                    <input type="text" placeholder="Mot de passe">
+
+                    <p id="conditions">En cliquant sur S’inscrire, vous acceptez les Conditions d’utilisation, la Politique de confidentialité, et la Politique relative aux cookies de FindEat.</p>
+                </div>
+                <input type="button" id="btn-register" value="S'inscrire">
+            </div>
+        </div>
+    </div>
 </body>
 <!-- SCRIPTS -->
 <script src="bootstrap-3.3.7/js/jquery-3.1.1.min.js"></script>
 <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
 <script src="home.js"></script>
+
+<script>
+    jQuery(function ($)
+    {
+        $('#btn-wallpaper, #btn-registration').on('click', function ()
+        {
+            $('#modalRegister').modal('show');
+        });
+
+        $('#btn-login').on('click', function ()
+        {
+            $('#modalResearchRestaurant').modal('show');
+        });
+    });
+</script>
+
 </html>

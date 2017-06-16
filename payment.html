@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Find Eat</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="delivery.css">
+    <link rel="stylesheet" href="payment.css">
     <link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.min.css">
 </head>
 <body>
@@ -40,9 +40,9 @@
     <div id="block-delivery">
 
         <div id="delivery-form">
-            <p>LIVRAISON</p>
+            <p>PAIEMENT</p>
             <form action="">
-                <p style="font-size: 18px; font-weight: bold">Adresse de livraison</p>
+                <p style="font-size: 18px; font-weight: bold">Carte</p>
 
                 <br><label for="firstname">Prénom</label>
                 <br><input type="text" id="firstname">
@@ -50,19 +50,23 @@
                 <br><label for="lastname">Nom</label>
                 <br><input type="text" id="lastname">
 
-                <br><label for="society">Nom de la société</label>
-                <br><input type="text" id="society">
+                <br><label for="credit-card">Numéro de la carte de crédit</label>
+                <br><input type="text" id="credit-card">
+
+                <br><label for="crypt-card" id="crypt-card-label">Cryptogramme visuel</label>
+                <br><input type="text" id="crypt-card">
 
                 <br><label for="postal-code">Code postal</label>
                 <br><input type="text" id="postal-code">
 
-                <br><label for="city">Ville</label>
-                <br><input type="text" id="city">
+                <br><label for="month">Valable jusqu'au :</label>
+                <br><input type="text" id="month" placeholder="Mois">
+                <input type="text" id="year" placeholder="Année">
 
                 <br><label for="phone">Téléphone</label>
                 <br><input type="text" id="phone">
 
-                <a href="#"><div class="btn-valid-and-continue">Valider & Continuer</div></a>
+                <a href="#"><div class="btn-valid-and-continue">Acheter Maintenant</div></a>
             </form>
         </div>
 
