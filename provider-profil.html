@@ -29,11 +29,11 @@
     <div id="block-profil-provider">
 
         <div class="col-sm-4">
-            <img src="assets/images/squarish-fair.png" id="img-provider-profil" alt="img profil provider">
+            <img src="" id="img-provider-profil" alt="img profil provider">
         </div>
         <div class="col-sm-8">
             <div class="pull-left" id="text-provider-profil">
-                <p id="title-provider">Claire's Marais</p>
+                <p id="title-provider"></p>
                 <p>Fournisseur français Bio et Equitable</p>
                 <p id="description-provider">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur debitis delectus hic libero magni nemo nulla quos recusandae reprehenderit. Accusamus cum doloremque expedita id impedit molestias nobis qui quia?</p>
             </div>
@@ -46,7 +46,7 @@
 <div class="container">
     <p class="title-product-research">
         <img src="assets/icons/gps-fixed-indicator.png" alt="icon gps indicator">
-        Paris 11ème
+        Paris <span id="postal-code"></span>
     </p>
     <div class="block-products">
         <a href="#"><div id="product-sold">Les produits vendus par le fournisseur</div></a>
@@ -321,6 +321,29 @@
 <script>
     jQuery(function($)
     {
+        if (sessionStorage != null)
+        {
+            var imageProvider = sessionStorage.getItem('imageProvider');
+            var postalCode = sessionStorage.getItem('postalCode');
+            var nameProvider = sessionStorage.getItem('nameProvider');
+
+            if (nameProvider)
+            {
+                $('#title-provider').html(nameProvider);
+            }
+
+            if (postalCode)
+            {
+                $('#postal-code').html(postalCode);
+            }
+
+            if (imageProvider)
+            {
+                urlImageProfil = 'assets/provider/' + imageProvider + '.jpg';
+                $('img#img-provider-profil').attr("src", urlImageProfil);
+            }
+        }
+
         // POUR AJOUTER UN PRODUIT --> OUVERTURE DE LA MODAL
        $('.block-img-product').on('click', function (e) {
            e.preventDefault();
