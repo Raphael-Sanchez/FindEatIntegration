@@ -11,7 +11,7 @@
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
         <!--<div class="col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">-->
-            <img src="assets/icons/logo-find-eat.png" alt="logo find eat" id="logo-find-eat">
+        <a href="https://www.raphaelsanchez.fr/projets/findeat/home.php"><img src="assets/icons/logo-find-eat.png" alt="logo find eat" id="logo-find-eat"></a>
         <!--</div>-->
         <!--<div class="col-sm-4 col-md-4 col-lg-4 no-padding">-->
         <div id="block-btn">
@@ -159,29 +159,28 @@
                             <img src="assets/icons/case-modal.png" alt="icon case checked" class="icon-case-checked">
                             <span id="title-product">De quels produits avez-vous besoin ?</span>
                             <div class="block-check">
+                                <label for="fruits" class="checkbox-label" style="margin-left: 0.28vw">Fruits&nbsp;
+                                    <input type="checkbox" id="fruits">
+                                </label>
+                                &nbsp;
+                                <label for="legumes" class="checkbox-label">Légumes&nbsp;
+                                    <input type="checkbox" id="legumes">
+                                </label>
+                                &nbsp;
+                                <label for="sauces" class="checkbox-label">Sauces&nbsp;
+                                    <input type="checkbox" id="sauces">
+                                </label>
 
-                                <label for="check1" class="checkbox-label" style="margin-left: 0.28vw">Fruits&nbsp;
-                                    <input type="checkbox" id="check1">
+                                <label for="boissons" class="checkbox-label">Boissons&nbsp;
+                                    <input type="checkbox" id="boissons">
                                 </label>
                                 &nbsp;
-                                <label for="check2" class="checkbox-label">Légumes&nbsp;
-                                    <input type="checkbox" id="check2">
+                                <label for="equitable" class="checkbox-label">Équitable&nbsp;
+                                    <input type="checkbox" id="equitable">
                                 </label>
                                 &nbsp;
-                                <label for="check3" class="checkbox-label">Sauces&nbsp;
-                                    <input type="checkbox" id="check3">
-                                </label>
-
-                                <label for="check4" class="checkbox-label">Boissons&nbsp;
-                                    <input type="checkbox" id="check4">
-                                </label>
-                                &nbsp;
-                                <label for="check5" class="checkbox-label">Équitable&nbsp;
-                                    <input type="checkbox" id="check5">
-                                </label>
-                                &nbsp;
-                                <label for="check6" class="checkbox-label" style="margin-left: 0.28vw">Bio&nbsp;
-                                    <input type="checkbox" id="check6">
+                                <label for="bio" class="checkbox-label" style="margin-left: 0.28vw">Bio&nbsp;
+                                    <input type="checkbox" id="bio">
                                 </label>
                             </div>
                         </div>
@@ -194,7 +193,7 @@
                         </div>
                     </li>
                 </ul>
-                <input type="button" id="btn-research" value="Rechercher">
+                <a href="#"><input type="button" id="btn-research" value="Rechercher"></a>
             </div>
         </div>
     </div>
@@ -217,7 +216,7 @@
                     <input type="text" id="firstname" placeholder="Prénom">
                     <input type="text" placeholder="Nom">
                     <input type="text" placeholder="Adresse mail">
-                    <input type="text" placeholder="Mot de passe">
+                    <input type="password" placeholder="Mot de passe">
 
                     <p id="conditions">En cliquant sur S’inscrire, vous acceptez les Conditions d’utilisation, la Politique de confidentialité, et la Politique relative aux cookies de FindEat.</p>
                 </div>
@@ -234,14 +233,31 @@
 <script>
     jQuery(function ($)
     {
+        // MODAL REGISTRATION SI CLICK SUR BOUTON JE ME LANCE OU BOUTON INSCRIPTION
         $('#btn-wallpaper, #btn-registration').on('click', function ()
         {
             $('#modalRegister').modal('show');
         });
 
-        $('#btn-login').on('click', function ()
+        // AU CLICK SUR S'INSCRIRE FERMETURE DE LA MODAL ET OUVERTE DE LA MODAL RECHERCHE DE PRODUIT
+        $('#btn-register').on('click', function ()
         {
+            $('#modalRegister').modal('hide');
             $('#modalResearchRestaurant').modal('show');
+        });
+
+        $('#btn-research').on('click', function (e)
+        {
+            e.preventDefault();
+
+            var selected = [];
+            $('.block-check input:checked').each(function() {
+                selected.push($(this).attr('id'));
+            });
+
+            sessionStorage.setItem('filters', selected);
+
+            location.href = 'https://www.raphaelsanchez.fr/projets/findeat/provider-research.php';
         });
     });
 </script>

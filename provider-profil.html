@@ -10,7 +10,7 @@
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top">
-    <img src="assets/icons/logo-find-eat.png" alt="logo find eat" id="logo-find-eat">
+    <a href="https://www.raphaelsanchez.fr/projets/findeat/home.php"><img src="assets/icons/logo-find-eat.png" alt="logo find eat" id="logo-find-eat"></a>
     <div id="block-btn">
         <a href="#"><input type="button" class="btn-navbar" id="btn-registration" value="Inscription"></a>
         <a href="#"><input type="button" class="btn-navbar" id="btn-login" value="Connexion"></a>
@@ -49,30 +49,30 @@
         Paris 11ème
     </p>
     <div class="block-products">
-        <a href="#"><div id="product-sold">Vos produits vu par les restaurateurs</div></a>
+        <a href="#"><div id="product-sold">Les produits vendus par le fournisseur</div></a>
         <ul class="ul-products">
             <li class="li-product">
-                <div class="block-img-product" style="background-image: url('assets/images/carottes.png')"></div>
+                <a href="#"><div class="block-img-product" id="carottes" style="background-image: url('assets/images/carottes.png')"></div></a>
                 <div class="legend-product">Carottes</div>
             </li>
             <li class="li-product">
-                <div class="block-img-product" style="background-image: url('assets/images/tomates.png')"></div>
+                <a href="#"><div class="block-img-product" id="tomates" style="background-image: url('assets/images/tomates.png')"></div></a>
                 <div class="legend-product">Tomates</div>
             </li>
             <li class="li-product">
-                <div class="block-img-product" style="background-image: url('assets/images/haricots.png')"></div>
+                <a href="#"><div class="block-img-product" id="haricots" style="background-image: url('assets/images/haricots.png')"></div></a>
                 <div class="legend-product">Haricots</div>
             </li>
             <li class="li-product">
-                <div class="block-img-product" style="background-image: url('assets/images/champignons.png')"></div>
+                <a href="#"><div class="block-img-product" id="champignons" style="background-image: url('assets/images/champignons.png')"></div></a>
                 <div class="legend-product">Champignons</div>
             </li>
             <li class="li-product">
-                <div class="block-img-product" style="background-image: url('assets/images/poivrons.png')"></div>
+                <a href="#"><div class="block-img-product" id="poivrons" style="background-image: url('assets/images/poivrons.png')"></div></a>
                 <div class="legend-product">Poivrons</div>
             </li>
             <li class="li-product">
-                <div class="block-img-product" style="background-image: url('assets/images/fraises.png')"></div>
+                <a href="#"><div class="block-img-product" id="fraises" style="background-image: url('assets/images/fraises.png')"></div></a>
                 <div class="legend-product">Fraises</div>
             </li>
         </ul>
@@ -121,9 +121,211 @@
     </div>
 </footer>
 
+<div class="modal fade" id="modalAddProduct" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content modal-content-add">
+
+            <div class="modal-header modal-header-add">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/icons/close-modal.png" alt="button close" id="btn-close-modal"></span></button>
+            </div>
+
+            <div class="modal-body modal-body-add">
+                <h1>Ajouter au panier</h1>
+                <div style="text-align: left">
+                    <span class="product-add-name">FRAISES <span>(vendus par kilos)</span></span>
+                    <p class="product-add-price">6,70€/kg</p>
+
+                    <div class="product-add-img"></div>
+
+                    <div class="add-or-remove-product">
+                        <a href="#"><div class="remove-product">-</div></a>
+                        <span class="quantity-add-or-remove">
+                                1
+                            </span>
+                        <a href="#"><div class="add-product">+</div></a>
+                    </div>
+                    <input type="button" id="btn-add" value="Ajouter au panier">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<style>
+    .modal:before
+    {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 20vh;
+    }
+
+    .modal-header-add
+    {
+        border: 0px;
+        height: 15px;
+    }
+
+    .modal-content-add
+    {
+        margin: auto;
+        width: 350px;
+        height: 530px;
+        border-radius: 0px;
+        text-align: center;
+        font-family: 'Gotham-Book';
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .modal-body-add
+    {
+        color: black;
+    }
+
+    .modal-body-add>h1
+    {
+        font-size: 30px;
+        padding-bottom: 30px;
+    }
+
+    .modal-body-add>img
+    {
+        width: 200px;
+    }
+
+    .product-add-name
+    {
+        font-family: 'Gotham-Bold';
+    }
+
+    .product-add-price
+    {
+        margin-top: 10px;
+        color: #726f6f;
+    }
+
+    .product-add-img
+    {
+        width: 180px;
+        height: 150px;
+        border: 1px solid black;
+        background-image: url("assets/images/fraises.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 30px;
+    }
+
+    .add-or-remove-product
+    {
+        width: 113px;
+        height: 40px;
+        border: 1px solid #b7b7b8;
+        border-radius: 5px;
+        box-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.3) inset;
+        display: inline-block;
+        float: left;
+        margin-top: 50px;
+    }
+
+    .remove-product
+    {
+        width: 35px;
+        height: 38px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: 1px solid #b7b7b8;
+        background-color: #ffffff;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 6px;
+    }
+
+    .quantity-add-or-remove
+    {
+        display: inline-block;
+        width: 41px;
+        margin-top: 10px;
+        font-family: 'Gotham-Medium-Regular';
+        text-align: center;
+    }
+
+    .add-product
+    {
+        padding: 0px;
+        width: 35px;
+        height: 38px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: 1px solid #b7b7b8;
+        background-color: white;
+        color: #f15c22;
+        font-family: 'Gotham-Bold';
+        display: inline-block;
+        float: right;
+        text-align: center;
+        font-size: 20px;
+        padding-top: 7px;
+    }
+
+    .close
+    {
+        opacity: 1;
+    }
+
+    #btn-close-modal
+    {
+        width: 1.2em;
+    }
+
+    input#btn-add
+    {
+        width: 155px;
+        height: 40px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 30px;
+        color: #ffffff;
+        font-family: 'Gotham-Book';
+        background-color: #fc543b;
+        display: inline-block;
+        float: right;
+        margin-top: 50px;
+    }
+
+    input#btn-add:hover
+    {
+        -webkit-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+        box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    }
+
+    input#btn-add:focus
+    {
+        outline: none;
+    }
+</style>
 
 </body>
 <!-- SCRIPTS -->
 <script src="bootstrap-3.3.7/js/jquery-3.1.1.min.js"></script>
 <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script>
+    jQuery(function($)
+    {
+        // POUR AJOUTER UN PRODUIT --> OUVERTURE DE LA MODAL
+       $('.block-img-product').on('click', function (e) {
+           e.preventDefault();
+           $('#modalAddProduct').modal('show');
+       });
+    });
+</script>
 </html>

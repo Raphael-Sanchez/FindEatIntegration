@@ -10,7 +10,7 @@
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-        <img src="assets/icons/logo-find-eat.png" alt="logo find eat" id="logo-find-eat">
+        <a href="https://www.raphaelsanchez.fr/projets/findeat/home.php"><img src="assets/icons/logo-find-eat.png" alt="logo find eat" id="logo-find-eat"></a>
         <div id="block-btn">
             <a href="#"><input type="button" class="btn-navbar" id="btn-registration" value="Inscription"></a>
             <a href="#"><input type="button" class="btn-navbar" id="btn-login" value="Connexion"></a>
@@ -104,7 +104,7 @@
         <div class="block-result">
             <div class="col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5 col-lg-offset-1 col-lg-5">
                 <div class="img-restaurant" style="background-image: url('assets/images/restau-test.png');">
-                    <a href="#"><div class="see-restaurant">Voir ce restaurant</div></a>
+                    <a href="#"><div class="see-restaurant">Voir ce fournisseur</div></a>
                 </div>
             </div>
             <div class="col-sm-offset-1 col-sm-5 col-md-5 col-lg-5">
@@ -174,9 +174,10 @@
 <script>
     jQuery(function ($)
     {
+        console.log('yeah filters', sessionStorage.getItem('filters'));
+
         $('#showFilters').click(function ()
         {
-            console.log('filtres');
             $('#block-filters').toggle();
         });
 
