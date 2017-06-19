@@ -2689,12 +2689,11 @@ input#email-newsletter:focus
 
     .img-product-basket
     {
-        width: 115px;
-        height: 100px;
+        width: 120px;
         border: 1px solid black;
         position: relative;
         top: 60px;
-        left: 60px;
+        left: 30px;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -2702,11 +2701,11 @@ input#email-newsletter:focus
 
     .block-product-quantity
     {
-        width: 470px;
+        width: 520px;
         height: 100px;
         position: relative;
         top: -40px;
-        left: 200px;
+        left: 180px;
         padding-top: 30px;
         text-align: center;
     }

@@ -12,8 +12,11 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <a href="https://www.raphaelsanchez.fr/projets/findeat/home.php"><img src="assets/icons/logo-find-eat.png" alt="logo find eat" id="logo-find-eat"></a>
     <div id="block-btn">
-        <a href="#"><input type="button" class="btn-navbar" id="btn-registration" value="Inscription"></a>
-        <a href="#"><input type="button" class="btn-navbar" id="btn-login" value="Connexion"></a>
+        <a href="#">
+            <div class="btn-basket"><img src="assets/icons/basket.png" alt="icon basket"></div>
+        </a>
+        <!--<a href="#"><input type="button" class="btn-navbar" id="btn-registration" value="Inscription"></a>-->
+        <!--<a href="#"><input type="button" class="btn-navbar" id="btn-login" value="Connexion"></a>-->
     </div>
 </nav>
 
@@ -126,25 +129,23 @@
         <div class="modal-content modal-content-add">
 
             <div class="modal-header modal-header-add">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><img src="assets/icons/close-modal.png" alt="button close" id="btn-close-modal"></span></button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="btn-close-modal-basket"><span aria-hidden="true"><img src="assets/icons/close-modal.png" alt="button close" id="btn-close-modal"></span></button>
             </div>
 
             <div class="modal-body modal-body-add">
                 <h1>Ajouter au panier</h1>
                 <div style="text-align: left">
-                    <span class="product-add-name">FRAISES <span>(vendus par kilos)</span></span>
+                    <span class="product-add-name">FRAISES</span> <span>(vendus par kilos)</span>
                     <p class="product-add-price">6,70€/kg</p>
 
-                    <div class="product-add-img"></div>
+                    <img src="assets/images/fraises.png" class="product-add-img" alt="">
 
                     <div class="add-or-remove-product">
                         <a href="#"><div class="remove-product">-</div></a>
-                        <span class="quantity-add-or-remove">
-                                1
-                            </span>
+                        <span class="quantity-add-or-remove">1</span>
                         <a href="#"><div class="add-product">+</div></a>
                     </div>
-                    <input type="button" id="btn-add" value="Ajouter au panier">
+                    <input type="button" id="btn-add" data-product="" value="Ajouter au panier">
                 </div>
             </div>
 
@@ -207,15 +208,11 @@
         color: #726f6f;
     }
 
-    .product-add-img
+    img.product-add-img
     {
-        width: 180px;
+        display: block;
         height: 150px;
         border: 1px solid black;
-        background-image: url("assets/images/fraises.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         margin-top: 30px;
     }
 
@@ -321,6 +318,8 @@
 <script>
     jQuery(function($)
     {
+        var productsBasket = {};
+
         if (sessionStorage != null)
         {
             var imageProvider = sessionStorage.getItem('imageProvider');
@@ -346,9 +345,72 @@
 
         // POUR AJOUTER UN PRODUIT --> OUVERTURE DE LA MODAL
        $('.block-img-product').on('click', function (e) {
+
            e.preventDefault();
+
+           $('#btn-add').attr('data-product', '');
+
+           var nameProduct = $(this).attr('id');
+           $('#btn-add').attr('data-product', nameProduct);
+
+           var priceProduct = '6,70€/kg';
+           priceProduct = getPriceProductByName(nameProduct);
+
+           var urlImage = 'assets/images/' + nameProduct + '.png';
+
+           $('img.product-add-img').attr('src', urlImage);
+           $('.product-add-name').html(nameProduct.toUpperCase());
+           $('.product-add-price').html(priceProduct);
+
            $('#modalAddProduct').modal('show');
+           console.log(productsBasket);
        });
+
+        $('#btn-add').on('click', function ()
+        {
+            var nameProduct = $(this).attr('data-product');
+            var quantityProduct = $('.quantity-add-or-remove').html();
+            var priceProduct = $('.product-add-price').html();
+            var providerName = $('#title-provider').html();
+
+            var product = {'nameProduct': nameProduct, 'quantityProduct': quantityProduct, 'priceProduct': priceProduct, 'providerName': providerName};
+            productsBasket[nameProduct] = product;
+
+            sessionStorage.setItem('basket', JSON.stringify(productsBasket));
+//            var obj = JSON.parse(sessionStorage.getItem('basket'));
+
+            $("#modalAddProduct").modal('hide');
+        });
+
+        function getPriceProductByName(nameProduct)
+        {
+            if (nameProduct == 'tomates')
+            {
+                priceProduct = '3,20€/kg';
+            }
+
+            if (nameProduct == 'haricots')
+            {
+                priceProduct = '2,90€/kg';
+            }
+
+            if (nameProduct == 'champignons')
+            {
+                priceProduct = '2,30€/kg';
+            }
+
+            if (nameProduct == 'poivrons')
+            {
+                priceProduct = '4,50€/kg';
+            }
+
+            if (nameProduct == 'fraises')
+            {
+                priceProduct = '3,70€/kg';
+            }
+
+            return priceProduct;
+        }
     });
 </script>
 </html>

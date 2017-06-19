@@ -92,6 +92,22 @@ img#logo-find-eat
     float: right;
 }
 
+.btn-basket
+{
+    display: block;
+    margin-top: -5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: #f15c22;
+}
+
+.btn-basket>img
+{
+    width: 17px;
+    margin-top: 9px;
+}
+
 /* --- NAVBAR BUTTON LINKS --- */
 a>input.btn-navbar
 {
