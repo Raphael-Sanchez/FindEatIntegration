@@ -228,7 +228,6 @@
 <!-- SCRIPTS -->
 <script src="bootstrap-3.3.7/js/jquery-3.1.1.min.js"></script>
 <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
-<script src="home.js"></script>
 
 <script>
     jQuery(function ($)
@@ -255,10 +254,11 @@
                 selected.push($(this).attr('id'));
             });
 
+            sessionStorage.clear();
             sessionStorage.setItem('filters', selected);
 
-            location.href = 'provider-research.html';
-//            location.href = 'https://www.raphaelsanchez.fr/projets/findeat/provider-research.php';
+//            location.href = 'provider-research.html';
+            location.href = 'https://www.raphaelsanchez.fr/projets/findeat/provider-research.php';
         });
     });
 </script>

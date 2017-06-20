@@ -651,12 +651,10 @@ input#email-newsletter:focus
     {
         width: 100%;
         text-align: left;
-        margin-left: 20px;
     }
 
     .reassurance-products>img
     {
-
         width: 350px;
         margin-top: 30px;
         padding-bottom: 30px;
@@ -1954,7 +1952,7 @@ input#email-newsletter:focus
     .block-basket-details
     {
         width: 98%;
-        border: 1px solid #d0d4d9;
+        border: 0px solid #d0d4d9;
         margin: auto;
     }
 
@@ -2035,23 +2033,25 @@ input#email-newsletter:focus
     #block-content-products
     {
         clear: both;
-        margin-top: 70px;
         width: 70%;
+        margin-top: 60px;
+        display: inline-block;
+        float: left;
     }
 
     #block-total-basket
     {
         box-sizing: border-box;
-        width: 280px;
-        position: absolute;
+        width: 275px;
+        height: 300px;
         border-top: 5px solid #f3f4f5;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 15px;
+        padding-left: 17px;
         padding-top: 20px;
         text-align: center;
+        float: left;
         display: inline-block;
-        margin-left: 640px;
-        margin-top: -770px;
+        margin-top: 60px;
     }
 
     .small-title-basket
@@ -2477,7 +2477,7 @@ input#email-newsletter:focus
     .block-basket-details
     {
         width: 90%;
-        border: 1px solid #d0d4d9;
+        border: 0px solid #d0d4d9;
         margin: auto;
     }
 
@@ -2558,23 +2558,25 @@ input#email-newsletter:focus
     #block-content-products
     {
         clear: both;
-        margin-top: 70px;
         width: 70%;
+        margin-top: 60px;
+        display: inline-block;
+        float: left;
     }
 
     #block-total-basket
     {
         box-sizing: border-box;
-        width: 308px;
-        position: absolute;
+        width: 307px;
+        height: 300px;
         border-top: 5px solid #f3f4f5;
-        padding-right: 30px;
+        padding-right: 28px;
         padding-left: 30px;
         padding-top: 20px;
         text-align: center;
+        float: left;
         display: inline-block;
-        margin-left: 716px;
-        margin-top: -770px;
+        margin-top: 60px;
     }
 
     .small-title-basket
