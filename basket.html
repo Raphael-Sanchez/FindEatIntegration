@@ -312,7 +312,7 @@
             quantityVal = value.quantityProduct + 'kg de ' + index;
             $(template).find('.quantity').html(quantityVal);
 
-            $(template).find('.price-product').html('€' + value.priceProduct);
+            $(template).find('.price-product').html(value.priceProduct.replace('€/kg', '') + '€/kg');
 
             $(template).find('.quantity-add-or-remove').html(value.quantityProduct);
             $(template).find('.product-provider').html('(de chez ' + value.providerName + ')');
@@ -400,7 +400,11 @@
             var totalPrice = 0;
             $.each(basketCalcul, function(index, value)
             {
-                var priceByProduct = value.quantityProduct * parseFloat(value.priceProduct);
+                var quantity = value.quantityProduct;
+                var priceProduct = value.priceProduct.replace(',', '.');
+
+                var priceByProduct = quantity * priceProduct;
+
                 totalPrice += priceByProduct;
             });
 
@@ -422,7 +426,11 @@
                 var totalPrice = 0;
                 $.each(basketCalcul, function(index, value)
                 {
-                    var priceByProduct = value.quantityProduct * parseFloat(value.priceProduct);
+                    var quantity = value.quantityProduct;
+                    var priceProduct = value.priceProduct.replace(',', '.');
+
+                    var priceByProduct = quantity * priceProduct;
+
                     totalPrice += priceByProduct;
                 });
 
