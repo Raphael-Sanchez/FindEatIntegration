@@ -406,7 +406,7 @@ input#email-newsletter:focus
     /* BLOCK DELIVERY PATH */
     #ul-block-delivery-path
     {
-        width: 98%;
+        width: 360px;
         margin: auto;
         padding: 0;
         text-align: center;
@@ -418,16 +418,32 @@ input#email-newsletter:focus
     .li-text-delivery-path
     {
         display: inline-block;
-        width: 118px;
+        width: 120px;
         height: 35px;
         line-height: 38px;
         font-family: 'Gotham-Medium-Regular';
         text-transform: uppercase;
+        font-size: 12px;
+    }
+
+    .first
+    {
+        background-color: #f15c22;
+    }
+
+    .second
+    {
+        background-color: #f15c22;
+    }
+
+    .third
+    {
+        background-color: #f15c22;
     }
 
     .arrow-right-1
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -440,7 +456,7 @@ input#email-newsletter:focus
 
     .arrow-right-2
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -834,7 +850,7 @@ input#email-newsletter:focus
     /* BLOCK DELIVERY PATH */
     #ul-block-delivery-path
     {
-        width: 90%;
+        width: 450px;
         margin: auto;
         padding: 0;
         text-align: center;
@@ -846,16 +862,32 @@ input#email-newsletter:focus
     .li-text-delivery-path
     {
         display: inline-block;
-        width: 132px;
+        width: 150px;
         height: 35px;
         line-height: 38px;
         font-family: 'Gotham-Medium-Regular';
         text-transform: uppercase;
+        font-size: 13px;
+    }
+
+    .first
+    {
+        background-color: #f15c22;
+    }
+
+    .second
+    {
+        background-color: #f15c22;
+    }
+
+    .third
+    {
+        background-color: #f15c22;
     }
 
     .arrow-right-1
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -868,7 +900,7 @@ input#email-newsletter:focus
 
     .arrow-right-2
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -1272,16 +1304,31 @@ input#email-newsletter:focus
     .li-text-delivery-path
     {
         display: inline-block;
-        width: 164px;
+        width: 165px;
         height: 35px;
         line-height: 38px;
         font-family: 'Gotham-Medium-Regular';
         text-transform: uppercase;
     }
 
+    .first
+    {
+        background-color: #f15c22;
+    }
+
+    .second
+    {
+        background-color: #f15c22;
+    }
+
+    .third
+    {
+        background-color: #f15c22;
+    }
+
     .arrow-right-1
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -1294,7 +1341,7 @@ input#email-newsletter:focus
 
     .arrow-right-2
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -1714,9 +1761,24 @@ input#email-newsletter:focus
         text-transform: uppercase;
     }
 
+    .first
+    {
+        background-color: #f15c22;
+    }
+
+    .second
+    {
+        background-color: #f15c22;
+    }
+
+    .third
+    {
+        background-color: #f15c22;
+    }
+
     .arrow-right-1
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -1729,7 +1791,7 @@ input#email-newsletter:focus
 
     .arrow-right-2
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -2130,15 +2192,29 @@ input#email-newsletter:focus
         display: inline-block;
         width: 263px;
         height: 35px;
-        /*background-color: #f15c22;*/
         line-height: 38px;
         font-family: 'Gotham-Medium-Regular';
         text-transform: uppercase;
     }
 
+    .first
+    {
+        background-color: #f15c22;
+    }
+
+    .second
+    {
+        background-color: #f15c22;
+    }
+
+    .third
+    {
+        background-color: #f15c22;
+    }
+
     .arrow-right-1
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;
@@ -2151,7 +2227,7 @@ input#email-newsletter:focus
 
     .arrow-right-2
     {
-        display: none;
+        display: block;
         position: relative;
         width: 0;
         height: 0;

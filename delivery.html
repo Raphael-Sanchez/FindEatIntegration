@@ -32,9 +32,9 @@
     <p class="delivery-block"><img src="assets/icons/truck-basket.png" alt="truck icon">&nbsp;&nbsp;Livraison express en 24h</p>
 
     <ul id="ul-block-delivery-path">
-        <li class="li-text-delivery-path first">Livraison <div class="arrow-right-1"></div></li>
-        <li class="li-text-delivery-path second">Paiement <div class="arrow-right-2"></div></li>
-        <li class="li-text-delivery-path third">Envoyer</li>
+        <li class="li-text-delivery-path">Livraison <div></div></li>
+        <li class="li-text-delivery-path">Paiement <div></div></li>
+        <li class="li-text-delivery-path">Envoyer</li>
     </ul>
 
     <div id="block-delivery">
@@ -72,19 +72,51 @@
 
             <div id="block-product-scroll">
 
-                <div class="img-resume first-resume" style="background-image: url('assets/images/poivrons.png')">
-                    <div class="text-img-resume">
+
+
+                <div class="img-resume first-resume" id="template-1" style="display: none">
+                    <div class="text-img-resume" >
                         Fraises (1kg)
                         <br><span>Quantité : <strong>3</strong></span>
                     </div>
                 </div>
-                <div class="img-resume first-resume" style="background-image: url('assets/images/patates.png')">
+
+                <div class="img-resume first-resume" id="template-2" style="display: none">
                     <div class="text-img-resume">
                         Pommes de terre (1kg)
                         <br><span>Quantité : <strong>3</strong></span>
                     </div>
                 </div>
-                <div class="img-resume first-resume" style="background-image: url('assets/images/citrons.png')">
+
+                <div class="img-resume first-resume" id="template-3" style="display: none">
+                    <div class="text-img-resume">
+                        Citrons (500g)
+                        <br><span>Quantité : <strong>3</strong></span>
+                    </div>
+                </div>
+
+                <div class="img-resume first-resume" id="template-4" style="display: none">
+                    <div class="text-img-resume">
+                        Citrons (500g)
+                        <br><span>Quantité : <strong>3</strong></span>
+                    </div>
+                </div>
+
+                <div class="img-resume first-resume" id="template-5" style="display: none">
+                    <div class="text-img-resume">
+                        Citrons (500g)
+                        <br><span>Quantité : <strong>3</strong></span>
+                    </div>
+                </div>
+
+                <div class="img-resume first-resume" id="template-6" style="display: none">
+                    <div class="text-img-resume">
+                        Citrons (500g)
+                        <br><span>Quantité : <strong>3</strong></span>
+                    </div>
+                </div>
+
+                <div class="img-resume first-resume" id="template-7" style="display: none">
                     <div class="text-img-resume">
                         Citrons (500g)
                         <br><span>Quantité : <strong>3</strong></span>
@@ -99,7 +131,7 @@
                 <div>
                     <br><span>Livraison</span> <span> Offerte</span>
                     <br><span>TVA :</span> <span> 20%</span>
-                    <br><span>Sous-total HT:</span> <span id="total-ht-delivery"> 42,50€</span>
+                    <br><span>Sous-total HT:</span> <span id="total-ht-delivery"> 36,25€</span>
                     <br><span>Montant total TTC :</span> <span id="total-ttc-delivery"> 42,50€</span>
                 </div>
             </div>
@@ -160,6 +192,26 @@
 <script>
     jQuery(function ($)
     {
+        console.log(sessionStorage);
+
+//        var basketObj = sessionStorage.getItem('basket');
+        var basketObj = JSON.parse(sessionStorage.getItem('basket'));
+
+        var count = 0;
+        $.each(basketObj, function(index, value)
+        {
+            count++;
+
+            $('#template-' + count).css('background-image', 'url(' + 'assets/images/' + index + '.png)');
+
+            var infos = '<div class="text-img-resume" style="text-transform: capitalize;">' + index + ' (' + value.quantityProduct + 'kg)' + '<br><span>Quantité : <strong>' + value.quantityProduct + '</strong></span></div>';
+            $('#template-' + count).html(infos);
+            $('#template-' + count).css('display', 'block');
+        });
+
+        $('#ul-block-delivery-path').find('li:nth-child(1)').addClass('first');
+        $('#ul-block-delivery-path').find('li:nth-child(1) div:nth-child(1)').addClass('arrow-right-1');
+
         var totalHT = sessionStorage.getItem('totalHT');
         var totalTTC = sessionStorage.getItem('totalTTC');
 
@@ -174,6 +226,14 @@
             var totalTTC = parseFloat(totalTTC).toFixed(2);
             $('#total-ttc-delivery').html(' ' + totalTTC.replace('.', ',') + '€');
         }
+
+        $('.btn-valid-and-continue,.btn-valid-and-continue-small-device').on('click', function ()
+        {
+//            location.href = 'payment.html';
+                        location.href = 'https://www.raphaelsanchez.fr/projets/findeat/payment.php';
+        });
+
+
     });
 </script>
 </html>

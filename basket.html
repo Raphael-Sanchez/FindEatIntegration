@@ -312,13 +312,13 @@
             quantityVal = value.quantityProduct + 'kg de ' + index;
             $(template).find('.quantity').html(quantityVal);
 
-            $(template).find('.price-product').html(value.priceProduct);
+            $(template).find('.price-product').html('€' + value.priceProduct);
 
             $(template).find('.quantity-add-or-remove').html(value.quantityProduct);
             $(template).find('.product-provider').html('(de chez ' + value.providerName + ')');
 
             price = value.priceProduct.replace('€/kg', '');
-            price =  price.replace(',', '.');
+            price =  price.replace('.', ',');
 
             infoProduct = {'nameProduct': index, 'quantityProduct': value.quantityProduct, 'priceProduct': price};
             basketCalcul[index] = infoProduct;
@@ -396,7 +396,7 @@
         $('#proceed-command').on('click', function (e)
         {
             e.preventDefault();
-            console.log(sessionStorage);
+
             var totalPrice = 0;
             $.each(basketCalcul, function(index, value)
             {
@@ -409,11 +409,11 @@
 
             sessionStorage.setItem('totalHT', totalPrice);
             sessionStorage.setItem('totalTTC', totalWithTva);
+            sessionStorage.setItem('basket', JSON.stringify(basketCalcul));
 
 //            location.href = 'delivery.html';
             location.href = 'https://www.raphaelsanchez.fr/projets/findeat/delivery.php';
         });
-
 
         function calculateBasket()
         {
@@ -434,6 +434,7 @@
                 $('#sous-total').html(totalPrice.toFixed(2).replace('.', ',') + ' €');
                 $('#total-with-tva').html(strTotalWithTva);
             }
+            console.log(basketCalcul);
         }
 
         calculateBasket();
